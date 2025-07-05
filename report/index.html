@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+  <header style="position:relative; overflow:hidden;">
+    <div class="header-bg-image"></div>
     <h1>EEAT+ Score Quality Report</h1>
   </header>
   <div class="container">
@@ -19,7 +20,18 @@
     </div>
 
     <h2>1. Page Analyzed</h2>
-    <p><strong>URL:</strong> <a href="https://example.com" target="_blank">https://example.com</a></p>
+    <div class="page-analyzed-flex">
+      <div class="page-analyzed-img-container">
+        <img src="https://main--gw25--vivesing.aem.live/media_17de03e1c60f2e37b73c2a35caaac98ec6e3f1219.png?width=2000&format=webply&optimize=medium" alt="Page Analyzed Visual" class="page-analyzed-img" />
+        <div class="page-analyzed-details">
+          <p><strong>URL:</strong> <a href="https://example.com" target="_blank">https://example.com</a></p>
+          <p><strong>Organic Traffic:</strong> 12,500/month</p>
+          <p><strong>Domain Authority:</strong> 67</p>
+          <p><strong>Page Authority:</strong> 54</p>
+          <p><strong>Page Quality:</strong> High</p>
+        </div>
+      </div>
+    </div>
 
     <h2>2. Scores</h2>
     <div class="scores-flex">
