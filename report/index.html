@@ -22,26 +22,50 @@
     <p><strong>URL:</strong> <a href="https://example.com" target="_blank">https://example.com</a></p>
 
     <h2>2. Scores</h2>
-    <div class="score-grid">
-      <div class="score-card">
-        <div class="score-ring green">92</div>
-        <div>Experience</div>
+    <div class="scores-flex">
+      <div class="combined-score-section">
+        <div id="combined-score-pie" class="combined-score-pie">
+          <svg width="160" height="160" viewBox="0 0 160 160">
+            <!-- Pie segments will be injected by JS -->
+            <g id="pie-segments"></g>
+            <circle cx="80" cy="80" r="56" fill="#1a202c"/>
+            <text id="pie-center-score" x="80" y="90" text-anchor="middle" font-size="38" font-weight="bold" fill="#ed8936">66</text>
+            <text id="pie-center-label" x="80" y="115" text-anchor="middle" font-size="15" fill="#a0aec0">Combined</text>
+          </svg>
+        </div>
+        <div class="combined-score-label">Combined Performance</div>
+        <div class="combined-score-breakdown">
+          <div class="breakdown-title">Weight Breakdown</div>
+          <ul>
+            <li><span>Experience</span> <span>18%</span></li>
+            <li><span>Expertise</span> <span>22%</span></li>
+            <li><span>Authoritativeness</span> <span>27%</span></li>
+            <li><span>Trust</span> <span>15%</span></li>
+            <li><span>Semantics</span> <span>18%</span></li>
+          </ul>
+        </div>
       </div>
-      <div class="score-card">
-        <div class="score-ring yellow">68</div>
-        <div>Expertise</div>
-      </div>
-      <div class="score-card">
-        <div class="score-ring red">45</div>
-        <div>Authoritativeness</div>
-      </div>
-      <div class="score-card">
-        <div class="score-ring green">88</div>
-        <div>Trust</div>
-      </div>
-      <div class="score-card">
-        <div class="score-ring yellow">72</div>
-        <div>Semantics Score</div>
+      <div class="score-grid">
+        <div class="score-card">
+          <div class="score-ring green">92</div>
+          <div>Experience</div>
+        </div>
+        <div class="score-card">
+          <div class="score-ring yellow">68</div>
+          <div>Expertise</div>
+        </div>
+        <div class="score-card">
+          <div class="score-ring red">45</div>
+          <div>Authoritativeness</div>
+        </div>
+        <div class="score-card">
+          <div class="score-ring green">88</div>
+          <div>Trust</div>
+        </div>
+        <div class="score-card">
+          <div class="score-ring yellow">72</div>
+          <div>Semantics Score</div>
+        </div>
       </div>
     </div>
 
@@ -218,6 +242,8 @@
     </div>
   </div>
 
+  <div id="pie-tooltip" class="pie-tooltip" style="display:none; position:absolute;"></div>
+
   <script>
     // Set the report generation date and time
     document.addEventListener('DOMContentLoaded', function() {
@@ -232,6 +258,81 @@
         timeZoneName: 'short'
       };
       document.getElementById('report-date').textContent = now.toLocaleDateString('en-US', options);
+
+      // --- PIE CHART LOGIC ---
+      const factors = [
+        { name: 'Experience', score: 92, color: '#48bb78' },
+        { name: 'Expertise', score: 68, color: '#ed8936' },
+        { name: 'Authoritativeness', score: 45, color: '#f56565' },
+        { name: 'Trust', score: 88, color: '#48bb78' },
+        { name: 'Semantics', score: 72, color: '#ed8936' }
+      ];
+      const weights = [0.18, 0.22, 0.27, 0.15, 0.18];
+      const total = 100;
+      const pie = document.getElementById('pie-segments');
+      const tooltip = document.getElementById('pie-tooltip');
+      let startAngle = 0;
+      factors.forEach((factor, i) => {
+        const angle = weights[i] * 360;
+        const endAngle = startAngle + angle;
+        const largeArc = angle > 180 ? 1 : 0;
+        const r = 70, cx = 80, cy = 80;
+        const start = polarToCartesian(cx, cy, r, startAngle);
+        const end = polarToCartesian(cx, cy, r, endAngle);
+        const d = [
+          `M ${cx} ${cy}`,
+          `L ${start.x} ${start.y}`,
+          `A ${r} ${r} 0 ${largeArc} 1 ${end.x} ${end.y}`,
+          'Z'
+        ].join(' ');
+        const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        path.setAttribute('d', d);
+        path.setAttribute('fill', factor.color);
+        path.setAttribute('fill-opacity', '0.85');
+        path.setAttribute('data-factor', factor.name);
+        path.setAttribute('data-score', factor.score);
+        path.setAttribute('data-color', factor.color);
+        path.style.cursor = 'pointer';
+        path.addEventListener('mouseenter', function(e) {
+          document.getElementById('pie-center-score').textContent = factor.score;
+          document.getElementById('pie-center-score').setAttribute('fill', factor.color);
+          document.getElementById('pie-center-label').textContent = factor.name;
+          // Tooltip
+          tooltip.innerHTML = `<strong>${factor.name}</strong><br>Score: ${factor.score}<br>Weight: ${(weights[i]*100).toFixed(0)}%`;
+          tooltip.style.display = 'block';
+        });
+        path.addEventListener('mousemove', function(e) {
+          tooltip.style.left = (e.clientX + 16) + 'px';
+          tooltip.style.top = (e.clientY - 10) + 'px';
+        });
+        path.addEventListener('mouseleave', function() {
+          document.getElementById('pie-center-score').textContent = '66';
+          document.getElementById('pie-center-score').setAttribute('fill', '#ed8936');
+          document.getElementById('pie-center-label').textContent = 'Combined';
+          tooltip.style.display = 'none';
+        });
+        pie.appendChild(path);
+        startAngle += angle;
+      });
+      function polarToCartesian(cx, cy, r, angle) {
+        const rad = (angle-90) * Math.PI / 180.0;
+        return {
+          x: cx + (r * Math.cos(rad)),
+          y: cy + (r * Math.sin(rad))
+        };
+      }
+
+      // Color individual factor cards based on score
+      document.querySelectorAll('.score-card').forEach((card, i) => {
+        const score = factors[i]?.score;
+        if (score !== undefined) {
+          const ring = card.querySelector('.score-ring');
+          ring.classList.remove('green', 'yellow', 'red');
+          if (score >= 90) ring.classList.add('green');
+          else if (score >= 50) ring.classList.add('yellow');
+          else ring.classList.add('red');
+        }
+      });
     });
   </script>
 </body>
