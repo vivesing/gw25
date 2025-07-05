@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EEATS+ Quality Report</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>EEAT+ Score Quality Report</h1>
+  </header>
+  <div class="container">
+    <div class="report-meta">
+      <div class="meta-item">
+        <span class="meta-label">Report Generated:</span>
+        <span class="meta-value" id="report-date"></span>
+      </div>
+    </div>
+
+    <h2>1. Page Analyzed</h2>
+    <p><strong>URL:</strong> <a href="https://example.com" target="_blank">https://example.com</a></p>
+
+    <h2>2. Scores</h2>
+    <div class="score-grid">
+      <div class="score-card">
+        <div class="score-ring green">92</div>
+        <div>Experience</div>
+      </div>
+      <div class="score-card">
+        <div class="score-ring yellow">68</div>
+        <div>Expertise</div>
+      </div>
+      <div class="score-card">
+        <div class="score-ring red">45</div>
+        <div>Authoritativeness</div>
+      </div>
+      <div class="score-card">
+        <div class="score-ring green">88</div>
+        <div>Trust</div>
+      </div>
+      <div class="score-card">
+        <div class="score-ring yellow">72</div>
+        <div>Semantics Score</div>
+      </div>
+    </div>
+
+    <h2>3. Problems Identified (Low Scoring Factors)</h2>
+    <details open>
+      <summary>Expertise (68)</summary>
+      <ul>
+        <li>Insufficient author bios or credentials listed</li>
+        <li>Thin content on key topics</li>
+      </ul>
+    </details>
+    <details open>
+      <summary>Authoritativeness (45)</summary>
+      <ul>
+        <li>Few or no reputable backlinks</li>
+        <li>No mentions on authoritative sites</li>
+        <li>Lack of structured data (e.g. organization schema)</li>
+      </ul>
+    </details>
+    <details open>
+      <summary>Semantics Score (72)</summary>
+      <ul>
+        <li>Missing or poor heading hierarchy</li>
+        <li>Low keyword relevance</li>
+        <li>No meta description or poorly written one</li>
+      </ul>
+    </details>
+
+    <h2>4. Suggestions / Recommendations</h2>
+    <details open>
+      <summary>For Expertise</summary>
+      <ul>
+        <li>Add detailed author bios with credentials</li>
+        <li>Expand thin pages with well-researched content</li>
+      </ul>
+    </details>
+    <details open>
+      <summary>For Authoritativeness</summary>
+      <ul>
+        <li>Develop a backlink strategy targeting reputable sources</li>
+        <li>Engage in PR or guest posting to increase mentions</li>
+        <li>Implement organization and article schema markup</li>
+      </ul>
+    </details>
+    <details open>
+      <summary>For Semantics Score</summary>
+      <ul>
+        <li>Use proper heading hierarchy (H1, H2, H3)</li>
+        <li>Optimize content for target keywords naturally</li>
+        <li>Write clear, enticing meta descriptions</li>
+      </ul>
+    </details>
+
+    <h2>5. Granular EEATS Analysis</h2>
+    <div class="table-container">
+      <table class="analysis-table">
+        <thead>
+          <tr>
+            <th>Factor</th>
+            <th>Score</th>
+            <th>Weight</th>
+            <th>Analysis</th>
+            <th>Problems</th>
+            <th>Recommendation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Experience Factor 1</td>
+            <td><span class="score-badge green">85</span></td>
+            <td>25%</td>
+            <td>Strong user engagement metrics and time on site</td>
+            <td>Limited user-generated content</td>
+            <td>Encourage user reviews and testimonials</td>
+          </tr>
+          <tr>
+            <td>Experience Factor 2</td>
+            <td><span class="score-badge green">92</span></td>
+            <td>20%</td>
+            <td>Excellent page load speed and mobile responsiveness</td>
+            <td>Minor navigation issues on mobile</td>
+            <td>Optimize mobile navigation menu</td>
+          </tr>
+          <tr>
+            <td>Expertise Factor 1</td>
+            <td><span class="score-badge yellow">65</span></td>
+            <td>30%</td>
+            <td>Author credentials are mentioned but not detailed</td>
+            <td>Insufficient author bios and credentials</td>
+            <td>Add comprehensive author profiles with credentials</td>
+          </tr>
+          <tr>
+            <td>Expertise Factor 2</td>
+            <td><span class="score-badge yellow">72</span></td>
+            <td>25%</td>
+            <td>Content shows some expertise but lacks depth</td>
+            <td>Thin content on key topics</td>
+            <td>Expand content with detailed research and examples</td>
+          </tr>
+          <tr>
+            <td>Authoritativeness Factor 1</td>
+            <td><span class="score-badge red">40</span></td>
+            <td>35%</td>
+            <td>Very few backlinks from reputable sources</td>
+            <td>Lack of quality backlinks and citations</td>
+            <td>Develop comprehensive backlink strategy</td>
+          </tr>
+          <tr>
+            <td>Authoritativeness Factor 2</td>
+            <td><span class="score-badge red">50</span></td>
+            <td>30%</td>
+            <td>No mentions on authoritative industry sites</td>
+            <td>No brand mentions on authoritative sites</td>
+            <td>Engage in PR and guest posting campaigns</td>
+          </tr>
+          <tr>
+            <td>Authoritativeness Factor 3</td>
+            <td><span class="score-badge red">45</span></td>
+            <td>35%</td>
+            <td>Missing structured data and schema markup</td>
+            <td>No organization or article schema</td>
+            <td>Implement comprehensive schema markup</td>
+          </tr>
+          <tr>
+            <td>Trust Factor 1</td>
+            <td><span class="score-badge green">90</span></td>
+            <td>40%</td>
+            <td>Strong security indicators and SSL certificate</td>
+            <td>Minor trust signals missing</td>
+            <td>Add trust badges and security certifications</td>
+          </tr>
+          <tr>
+            <td>Trust Factor 2</td>
+            <td><span class="score-badge green">85</span></td>
+            <td>35%</td>
+            <td>Good privacy policy and terms of service</td>
+            <td>Privacy policy could be more detailed</td>
+            <td>Enhance privacy policy with more details</td>
+          </tr>
+          <tr>
+            <td>Trust Factor 3</td>
+            <td><span class="score-badge green">88</span></td>
+            <td>25%</td>
+            <td>Positive user reviews and testimonials</td>
+            <td>Limited number of recent reviews</td>
+            <td>Encourage more customer reviews</td>
+          </tr>
+          <tr>
+            <td>Semantics Factor 1</td>
+            <td><span class="score-badge yellow">75</span></td>
+            <td>30%</td>
+            <td>Good heading structure but could be improved</td>
+            <td>Inconsistent heading hierarchy</td>
+            <td>Implement proper H1-H6 heading structure</td>
+          </tr>
+          <tr>
+            <td>Semantics Factor 2</td>
+            <td><span class="score-badge yellow">70</span></td>
+            <td>35%</td>
+            <td>Moderate keyword relevance and optimization</td>
+            <td>Low keyword density and relevance</td>
+            <td>Optimize content for target keywords naturally</td>
+          </tr>
+          <tr>
+            <td>Semantics Factor 3</td>
+            <td><span class="score-badge yellow">72</span></td>
+            <td>35%</td>
+            <td>Basic meta descriptions present</td>
+            <td>Poor meta description quality</td>
+            <td>Write compelling, keyword-rich meta descriptions</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    // Set the report generation date and time
+    document.addEventListener('DOMContentLoaded', function() {
+      const now = new Date();
+      const options = { 
+        year: 'numeric', 
+        month: 'long', 
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        timeZoneName: 'short'
+      };
+      document.getElementById('report-date').textContent = now.toLocaleDateString('en-US', options);
+    });
+  </script>
+</body>
+</html>
