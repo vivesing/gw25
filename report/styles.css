@@ -541,6 +541,12 @@ a:hover {
   margin-bottom: 2px;
 }
 
+.header-bg-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 .header-bg-image {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -549,9 +555,9 @@ a:hover {
   background: url('https://main--gw25--vivesing.aem.live/media_11e2552edd78a3faecc70c4cb5085fee76f153780.jpg?width=2000&format=webply&optimize=medium') center center/cover no-repeat;
   opacity: 0.28;
   z-index: 0;
+  border-radius: 20px;
 }
-
-header h1 {
+.header-bg-container h1 {
   position: relative;
   z-index: 1;
 }
