@@ -8,7 +8,7 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
-  color: #e2e8f0;
+  color: #cbd5e1;
   line-height: 1.6;
   min-height: 100vh;
 }
@@ -40,7 +40,8 @@ header h1 {
   margin-bottom: 10px;
   position: relative;
   z-index: 1;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  color: #f7fafc;
 }
 
 .container {
@@ -57,8 +58,8 @@ header h1 {
 h2 {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #e2e8f0;
-  border-bottom: 3px solid #4a5568;
+  color: #e9ecef;
+  border-bottom: 3px solid #7f9cf5;
   padding-bottom: 15px;
   margin-top: 40px;
   margin-bottom: 25px;
@@ -100,11 +101,11 @@ h2::after {
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  border: 10px solid #ed8936;
+  border: 10px solid #facc15;
   line-height: 140px;
   font-size: 40px;
   font-weight: 700;
-  color: #ed8936;
+  color: #facc15;
   margin: 0 auto 18px;
   position: relative;
   background: #1a202c;
@@ -114,7 +115,7 @@ h2::after {
 .combined-score-label {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #e2e8f0;
+  color: #a5b4fc;
   margin-bottom: 18px;
 }
 
@@ -126,7 +127,7 @@ h2::after {
 .combined-score-breakdown .breakdown-title {
   font-size: 1rem;
   font-weight: 600;
-  color: #a0aec0;
+  color: #a5b4fc;
   margin-bottom: 8px;
 }
 
@@ -144,6 +145,14 @@ h2::after {
   padding: 4px 0;
 }
 
+.combined-score-breakdown li span:first-child {
+  color: #7f9cf5;
+}
+
+.combined-score-breakdown li span:last-child {
+  color: #e9ecef;
+}
+
 .score-grid {
   flex: 1 1 350px;
   display: grid;
@@ -153,12 +162,12 @@ h2::after {
 }
 
 .score-card {
-  background: linear-gradient(145deg, #2d3748, #1a202c);
+  background: linear-gradient(120deg, #232a36 60%, #1e293b 100%);
   border-radius: 16px;
   padding: 25px;
   text-align: center;
   box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(127,156,245,0.08);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -204,22 +213,25 @@ h2::after {
   z-index: -1;
 }
 
-.green { 
-  --ring-color: #48bb78;
-  border-color: #48bb78; 
-  color: #48bb78; 
+.score-ring.green, .score-badge.green {
+  --ring-color: #22c55e;
+  border-color: #22c55e;
+  color: #22c55e;
+  background: rgba(34,197,94,0.08);
 }
 
-.yellow { 
-  --ring-color: #ed8936;
-  border-color: #ed8936; 
-  color: #ed8936; 
+.score-ring.yellow, .score-badge.yellow {
+  --ring-color: #facc15;
+  border-color: #facc15;
+  color: #facc15;
+  background: rgba(250,204,21,0.10);
 }
 
-.red { 
-  --ring-color: #f56565;
-  border-color: #f56565; 
-  color: #f56565; 
+.score-ring.red, .score-badge.red {
+  --ring-color: #ef4444;
+  border-color: #ef4444;
+  color: #ef4444;
+  background: rgba(239,68,68,0.10);
 }
 
 .score-card > div:last-child {
@@ -299,14 +311,14 @@ ul li::before {
 
 /* URL styling */
 a {
-  color: #667eea;
+  color: #7f9cf5;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #764ba2;
+  color: #a5b4fc;
   text-decoration: underline;
 }
 
@@ -367,17 +379,18 @@ a:hover {
   padding: 15px 12px;
   text-align: left;
   font-weight: 600;
-  color: #e2e8f0;
+  color: #f7fafc;
   border-bottom: 2px solid #4a5568;
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  background: linear-gradient(90deg, #232a36 60%, #1e293b 100%);
 }
 
 .analysis-table td {
   padding: 12px;
   border-bottom: 1px solid rgba(255,255,255,0.1);
-  color: #e2e8f0;
+  color: #cbd5e1;
   vertical-align: top;
   line-height: 1.5;
 }
@@ -517,8 +530,8 @@ a:hover {
 .pie-tooltip {
   position: absolute;
   z-index: 1000;
-  background: #23272f;
-  color: #fff;
+  background: #232a36;
+  color: #e9ecef;
   padding: 6px 12px;
   border-radius: 8px;
   font-size: 0.82rem;
@@ -528,13 +541,13 @@ a:hover {
   white-space: nowrap;
   opacity: 0.97;
   transition: opacity 0.15s;
-  border: 1px solid #353a45;
+  border: 1px solid #7f9cf5;
   letter-spacing: 0.01em;
 }
 
 .pie-tooltip strong {
   font-weight: 500;
-  color: #a0aec0;
+  color: #7f9cf5;
   font-size: 0.9em;
   letter-spacing: 0.02em;
   display: block;
@@ -583,8 +596,8 @@ a:hover {
   transform: translateY(-50%);
   min-width: 180px;
   max-width: 48%;
-  background: rgba(26,32,44,0.82);
-  color: #e2e8f0;
+  background: linear-gradient(120deg, rgba(30,41,59,0.92) 60%, rgba(55,65,81,0.92) 100%);
+  color: #e9ecef;
   border-radius: 10px 0 0 10px;
   padding: 18px 22px 18px 18px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
@@ -596,9 +609,13 @@ a:hover {
 }
 .page-analyzed-details p {
   margin: 0 0 2px 0;
-  color: #e2e8f0;
+  color: #e0e7ef;
   font-size: 0.93em;
   letter-spacing: 0.01em;
+}
+.page-analyzed-details strong {
+  color: #7f9cf5;
+  font-weight: 600;
 }
 @media (max-width: 700px) {
   .page-analyzed-img-container {
