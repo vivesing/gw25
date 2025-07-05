@@ -317,6 +317,7 @@
           tooltip.style.display = 'block';
         });
         path.addEventListener('mousemove', function(e) {
+          tooltip.style.position = 'fixed';
           tooltip.style.left = (e.clientX + 16) + 'px';
           tooltip.style.top = (e.clientY - 10) + 'px';
         });
