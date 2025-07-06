@@ -170,12 +170,15 @@
   <div id="pie-tooltip" class="pie-tooltip" style="display:none; position:absolute;"></div>
 
   <!-- Agent Info Popup -->
-  <div id="agent-popup-overlay" class="popup-overlay" onclick="hideAgentInfo()"></div>
+  <div id="agent-popup-overlay" class="popup-overlay"></div>
   <div id="agent-popup-content" class="popup-content" style="display: none;">
-    <button class="popup-close" onclick="hideAgentInfo()">&times;</button>
     <div class="popup-header">
       <h3 id="popup-title" class="popup-title"></h3>
       <p id="popup-subtitle" class="popup-subtitle"></p>
+      <div class="popup-scores">
+        <span id="popup-score" class="popup-score-badge"></span>
+        <span id="popup-weight" class="popup-weight"></span>
+      </div>
     </div>
     <div class="popup-body">
       <div class="popup-section">
@@ -282,14 +285,29 @@
           else ring.classList.add('red');
         }
       });
+
+      // Add event listener for popup overlay close functionality
+      const overlay = document.getElementById('agent-popup-overlay');
+      
+      if (overlay) {
+        overlay.addEventListener('click', hideAgentInfo);
+      }
     });
 
     // Agent Info Popup Functions
-    function showAgentInfo(agentName, category, description, functions) {
+    function showAgentInfo(agentName, category, description, functions, score, weight) {
       // Populate popup content
       document.getElementById('popup-title').textContent = agentName;
       document.getElementById('popup-subtitle').textContent = `${category} Agent`;
       document.getElementById('popup-description').textContent = description;
+      
+      // Populate score and weight
+      const scoreElement = document.getElementById('popup-score');
+      const weightElement = document.getElementById('popup-weight');
+      
+      scoreElement.textContent = score;
+      scoreElement.className = `popup-score-badge ${getScoreClass(score)}`;
+      weightElement.textContent = `Weight: ${weight}`;
       
       // Populate functions list
       const functionsList = document.getElementById('popup-functions');
@@ -312,6 +330,12 @@
       content.style.top = '50%';
       content.style.left = '50%';
       content.style.transform = 'translate(-50%, -50%)';
+    }
+
+    function getScoreClass(score) {
+      if (score >= 75) return 'green';
+      else if (score >= 60) return 'yellow';
+      else return 'red';
     }
 
     function hideAgentInfo() {
@@ -345,7 +369,13 @@
         
         // Create agent name cell with info icon
         const agentCell = document.createElement('td');
-        agentCell.innerHTML = `${row.agentName} <span class="info-icon" onclick="showAgentInfo('${row.agentName}', '${row.category}', '${row.description}', ${JSON.stringify(row.functions)})">i</span>`;
+        agentCell.innerHTML = `${row.agentName} <span class="info-icon">i</span>`;
+        
+        // Add click event listener to the info icon
+        const infoIcon = agentCell.querySelector('.info-icon');
+        infoIcon.addEventListener('click', function() {
+          showAgentInfo(row.agentName, row.category, row.description, row.functions, row.score, row.weight);
+        });
         
         // Create score cell
         const scoreCell = document.createElement('td');
