@@ -152,7 +152,7 @@
         <thead>
           <tr>
             <th>Factor</th>
-            <th>Score</th>
+            <th>Score (0-10)</th>
             <th>Weight</th>
             <th>Analysis</th>
             <th>Problems</th>
@@ -160,109 +160,190 @@
           </tr>
         </thead>
         <tbody>
+          <!-- Authoritativeness Factors -->
           <tr>
-            <td>Experience Factor 1</td>
-            <td><span class="score-badge red">25</span></td>
-            <td>25%</td>
-            <td>Poor user engagement metrics and low time on site</td>
-            <td>Very limited user-generated content</td>
-            <td>Implement interactive features and user engagement tools</td>
-          </tr>
-          <tr>
-            <td>Experience Factor 2</td>
-            <td><span class="score-badge red">35</span></td>
-            <td>20%</td>
-            <td>Slow page load speed and poor mobile responsiveness</td>
-            <td>Major navigation issues on mobile</td>
-            <td>Optimize page speed and mobile navigation</td>
-          </tr>
-          <tr>
-            <td>Expertise Factor 1</td>
-            <td><span class="score-badge yellow">40</span></td>
-            <td>30%</td>
-            <td>Author credentials are mentioned but not detailed</td>
-            <td>Insufficient author bios and credentials</td>
-            <td>Add comprehensive author profiles with credentials</td>
-          </tr>
-          <tr>
-            <td>Expertise Factor 2</td>
-            <td><span class="score-badge yellow">46</span></td>
-            <td>25%</td>
-            <td>Content shows some expertise but lacks depth</td>
-            <td>Thin content on key topics</td>
-            <td>Expand content with detailed research and examples</td>
-          </tr>
-          <tr>
-            <td>Authoritativeness Factor 1</td>
-            <td><span class="score-badge green">75</span></td>
-            <td>35%</td>
+            <td>Authoritativeness Analysis Agent</td>
+            <td><span class="score-badge green">80</span></td>
+            <td>7%</td>
             <td>Good backlinks from reputable sources</td>
             <td>Could improve backlink quality</td>
             <td>Continue building high-quality backlinks</td>
           </tr>
           <tr>
-            <td>Authoritativeness Factor 2</td>
-            <td><span class="score-badge green">70</span></td>
-            <td>30%</td>
+            <td>Engagement Credibility Agent</td>
+            <td><span class="score-badge yellow">60</span></td>
+            <td>4%</td>
             <td>Some mentions on authoritative industry sites</td>
             <td>Limited brand mentions on authoritative sites</td>
             <td>Increase PR and guest posting campaigns</td>
           </tr>
           <tr>
-            <td>Authoritativeness Factor 3</td>
-            <td><span class="score-badge green">71</span></td>
-            <td>35%</td>
+            <td>Organisation Schema Analysis Agent</td>
+            <td><span class="score-badge green">70</span></td>
+            <td>5%</td>
             <td>Good structured data and schema markup</td>
             <td>Could enhance schema implementation</td>
             <td>Improve schema markup implementation</td>
           </tr>
+          
+          <!-- Experience Factors -->
           <tr>
-            <td>Trust Factor 1</td>
-            <td><span class="score-badge yellow">65</span></td>
-            <td>40%</td>
-            <td>Basic security indicators and SSL certificate</td>
-            <td>Missing some trust signals</td>
-            <td>Add trust badges and security certifications</td>
+            <td>Author Credit Analysis Agent</td>
+            <td><span class="score-badge yellow">60</span></td>
+            <td>0%</td>
+            <td>Poor user engagement metrics and low time on site</td>
+            <td>Very limited user-generated content</td>
+            <td>Implement interactive features and user engagement tools</td>
           </tr>
           <tr>
-            <td>Trust Factor 2</td>
-            <td><span class="score-badge yellow">58</span></td>
-            <td>35%</td>
-            <td>Basic privacy policy and terms of service</td>
-            <td>Privacy policy needs enhancement</td>
-            <td>Enhance privacy policy with more details</td>
+            <td>Content Internal Reviews Analysis Agent</td>
+            <td><span class="score-badge red">0</span></td>
+            <td>7.5%</td>
+            <td>Slow page load speed and poor mobile responsiveness</td>
+            <td>Major navigation issues on mobile</td>
+            <td>Optimize page speed and mobile navigation</td>
           </tr>
           <tr>
-            <td>Trust Factor 3</td>
-            <td><span class="score-badge yellow">57</span></td>
-            <td>25%</td>
-            <td>Limited user reviews and testimonials</td>
-            <td>Very few recent reviews</td>
-            <td>Encourage more customer reviews</td>
+            <td>Sentiment Analysis Agent</td>
+            <td><span class="score-badge yellow">60</span></td>
+            <td>7.5%</td>
+            <td>Poor user sentiment and engagement</td>
+            <td>Negative user sentiment detected</td>
+            <td>Improve user experience and address negative feedback</td>
+          </tr>
+          
+          <!-- Expertise Factors -->
+          <tr>
+            <td>Content Internal Press Coverage Agent</td>
+            <td><span class="score-badge green">80</span></td>
+            <td>2%</td>
+            <td>Author credentials are mentioned but not detailed</td>
+            <td>Insufficient author bios and credentials</td>
+            <td>Add comprehensive author profiles with credentials</td>
           </tr>
           <tr>
-            <td>Semantics Factor 1</td>
-            <td><span class="score-badge yellow">68</span></td>
-            <td>30%</td>
+            <td>Editorial Policy Analysis Agent</td>
+            <td><span class="score-badge red">0</span></td>
+            <td>0%</td>
+            <td>Content shows some expertise but lacks depth</td>
+            <td>Thin content on key topics</td>
+            <td>Expand content with detailed research and examples</td>
+          </tr>
+          <tr>
+            <td>Expertise Research Analysis Agent</td>
+            <td><span class="score-badge yellow">60</span></td>
+            <td>1%</td>
+            <td>Basic research depth but needs improvement</td>
+            <td>Limited research citations and sources</td>
+            <td>Add more comprehensive research and citations</td>
+          </tr>
+          <tr>
+            <td>Expertise Stats Analysis Agent</td>
+            <td><span class="score-badge red">30</span></td>
+            <td>6%</td>
+            <td>Some statistical data present</td>
+            <td>Limited statistical evidence and data</td>
+            <td>Include more statistical data and evidence</td>
+          </tr>
+          
+          <!-- Semantic Alignment Factors -->
+          <tr>
+            <td>Clarity Brevity Analysis Agent</td>
+            <td><span class="score-badge green">100</span></td>
+            <td>5%</td>
             <td>Basic heading structure but needs improvement</td>
             <td>Inconsistent heading hierarchy</td>
             <td>Implement proper H1-H6 heading structure</td>
           </tr>
           <tr>
-            <td>Semantics Factor 2</td>
-            <td><span class="score-badge yellow">62</span></td>
-            <td>35%</td>
+            <td>Content CTA Analysis Agent</td>
+            <td><span class="score-badge green">70</span></td>
+            <td>6%</td>
             <td>Moderate keyword relevance and optimization</td>
             <td>Low keyword density and relevance</td>
             <td>Optimize content for target keywords naturally</td>
           </tr>
           <tr>
-            <td>Semantics Factor 3</td>
-            <td><span class="score-badge yellow">65</span></td>
-            <td>35%</td>
+            <td>Semantic Fitness Conversational Agent</td>
+            <td><span class="score-badge green">70</span></td>
+            <td>5%</td>
             <td>Basic meta descriptions present</td>
             <td>Poor meta description quality</td>
             <td>Write compelling, keyword-rich meta descriptions</td>
+          </tr>
+          <tr>
+            <td>Semantic Fitness FAQ Agent</td>
+            <td><span class="score-badge yellow">60</span></td>
+            <td>2.5%</td>
+            <td>Basic FAQ structure present</td>
+            <td>Limited FAQ coverage and depth</td>
+            <td>Expand FAQ section with comprehensive answers</td>
+          </tr>
+          <tr>
+            <td>Semantic Fitness Granular Journey Agent</td>
+            <td><span class="score-badge yellow">50</span></td>
+            <td>6%</td>
+            <td>Basic user journey optimization</td>
+            <td>Limited journey mapping and optimization</td>
+            <td>Improve user journey and conversion paths</td>
+          </tr>
+          <tr>
+            <td>Uniqueness Analysis Agent</td>
+            <td><span class="score-badge yellow">50</span></td>
+            <td>9%</td>
+            <td>Some unique content elements</td>
+            <td>Limited unique value proposition</td>
+            <td>Enhance unique content and value proposition</td>
+          </tr>
+          
+          <!-- Trustworthiness Factors -->
+          <tr>
+            <td>Content Consistency Analysis Agent</td>
+            <td><span class="score-badge red">30</span></td>
+            <td>5%</td>
+            <td>Basic security indicators and SSL certificate</td>
+            <td>Missing some trust signals</td>
+            <td>Add trust badges and security certifications</td>
+          </tr>
+          <tr>
+            <td>Trust Company Registration Analysis Agent</td>
+            <td><span class="score-badge green">70</span></td>
+            <td>1%</td>
+            <td>Basic privacy policy and terms of service</td>
+            <td>Privacy policy needs enhancement</td>
+            <td>Enhance privacy policy with more details</td>
+          </tr>
+          <tr>
+            <td>Trust Contact Info Analysis Agent</td>
+            <td><span class="score-badge red">30</span></td>
+            <td>5%</td>
+            <td>Limited user reviews and testimonials</td>
+            <td>Very few recent reviews</td>
+            <td>Encourage more customer reviews</td>
+          </tr>
+          <tr>
+            <td>Trust Ecommerce Policy Analysis Agent</td>
+            <td><span class="score-badge green">90</span></td>
+            <td>6%</td>
+            <td>Basic ecommerce trust signals</td>
+            <td>Limited ecommerce security indicators</td>
+            <td>Add ecommerce security badges and policies</td>
+          </tr>
+          <tr>
+            <td>Trust Last Updated Analysis Agent</td>
+            <td><span class="score-badge green">90</span></td>
+            <td>7%</td>
+            <td>Content freshness indicators present</td>
+            <td>Limited content update frequency</td>
+            <td>Update content more frequently</td>
+          </tr>
+          <tr>
+            <td>Trust Policy Pages Analysis Agent</td>
+            <td><span class="score-badge red">30</span></td>
+            <td>2.5%</td>
+            <td>Basic policy page structure</td>
+            <td>Limited policy page coverage</td>
+            <td>Enhance policy pages and legal information</td>
           </tr>
         </tbody>
       </table>
