@@ -6,11 +6,10 @@
       "category": "Experience",
       "description": "This agent evaluates author credibility and expertise based on various factors including credentials, experience, and recognition.",
       "functions": [
-        "Analyzes author credentials and qualifications",
-        "Evaluates author experience and expertise",
-        "Assesses author recognition and awards",
-        "Measures author credibility and trustworthiness",
-        "Identifies areas for author profile enhancement"
+        "Analyzes author byline presence and clarity",
+        "Evaluates author demonstrated expertise in topic",
+        "Checks author verifiability and credentials",
+        "Assesses schema.org authorship markup"
       ],
       "score": 3,
       "scoreClass": "red",
@@ -25,11 +24,10 @@
       "category": "Authoritativeness",
       "description": "This agent evaluates the authority and credibility of content sources and backlinks to assess overall content authority.",
       "functions": [
-        "Analyzes backlink quality and authority",
-        "Evaluates source credibility and reputation",
-        "Assesses domain authority and trust",
-        "Measures content authority signals",
-        "Identifies authority building opportunities"
+        "Analyzes backlinks from authoritative domains",
+        "Evaluates presence in reputable directories and awards",
+        "Assesses author expertise and credentials",
+        "Checks citations to authoritative sources"
       ],
       "score": 8,
       "scoreClass": "green",
@@ -44,11 +42,10 @@
       "category": "Semantics",
       "description": "This agent analyzes content clarity and brevity to assess readability and user comprehension.",
       "functions": [
-        "Analyzes content clarity and readability",
-        "Evaluates content brevity and conciseness",
-        "Assesses user comprehension levels",
-        "Measures content accessibility",
-        "Identifies clarity improvement opportunities"
+        "Analyzes content clarity and scannability",
+        "Evaluates content brevity and focus",
+        "Assesses structured content for parsing",
+        "Measures heading hierarchy and logical flow"
       ],
       "score": 3,
       "scoreClass": "red",
@@ -66,8 +63,7 @@
         "Analyzes content consistency and reliability",
         "Evaluates information accuracy and reliability",
         "Assesses content trustworthiness",
-        "Measures content credibility signals",
-        "Identifies consistency improvement areas"
+        "Measures content credibility signals"
       ],
       "score": 6,
       "scoreClass": "yellow",
@@ -85,8 +81,7 @@
         "Analyzes CTA placement and effectiveness",
         "Evaluates conversion optimization strategies",
         "Assesses user journey and conversion paths",
-        "Measures CTA performance and engagement",
-        "Identifies conversion improvement opportunities"
+        "Measures CTA performance and engagement"
       ],
       "score": 7,
       "scoreClass": "green",
@@ -104,8 +99,7 @@
         "Analyzes internal press coverage",
         "Evaluates media mentions and citations",
         "Assesses industry recognition and expertise",
-        "Measures content authority in media",
-        "Identifies press coverage opportunities"
+        "Measures content authority in media"
       ],
       "score": 3,
       "scoreClass": "red",
@@ -123,8 +117,7 @@
         "Analyzes user reviews and ratings",
         "Evaluates content engagement metrics",
         "Assesses user sentiment and feedback patterns",
-        "Measures content effectiveness and user satisfaction",
-        "Identifies areas for content improvement based on user feedback"
+        "Measures content effectiveness and user satisfaction"
       ],
       "score": 7,
       "scoreClass": "green",
@@ -142,8 +135,7 @@
         "Analyzes editorial policies and standards",
         "Evaluates content quality guidelines",
         "Assesses editorial expertise and processes",
-        "Measures content quality standards",
-        "Identifies editorial improvement areas"
+        "Measures content quality standards"
       ],
       "score": 0,
       "scoreClass": "red",
@@ -161,8 +153,7 @@
         "Analyzes user engagement metrics",
         "Evaluates interaction patterns",
         "Assesses content effectiveness",
-        "Measures user interest and participation",
-        "Identifies engagement improvement strategies"
+        "Measures user interest and participation"
       ],
       "score": 8,
       "scoreClass": "green",
@@ -180,8 +171,7 @@
         "Analyzes research methodology and depth",
         "Evaluates source credibility and citations",
         "Assesses research quality and rigor",
-        "Measures content expertise level",
-        "Identifies research improvement opportunities"
+        "Measures content expertise level"
       ],
       "score": 6,
       "scoreClass": "yellow",
@@ -199,8 +189,7 @@
         "Analyzes statistical data and evidence",
         "Evaluates data quality and reliability",
         "Assesses statistical methodology",
-        "Measures content statistical rigor",
-        "Identifies statistical improvement areas"
+        "Measures content statistical rigor"
       ],
       "score": 6,
       "scoreClass": "yellow",
@@ -218,8 +207,7 @@
         "Analyzes organizational schema markup",
         "Evaluates structured data implementation",
         "Assesses content organization patterns",
-        "Measures discoverability and SEO structure",
-        "Identifies schema optimization opportunities"
+        "Measures discoverability and SEO structure"
       ],
       "score": 7,
       "scoreClass": "green",
@@ -237,8 +225,7 @@
         "Analyzes conversational tone and style",
         "Evaluates natural language patterns",
         "Assesses user-friendly content structure",
-        "Measures content accessibility and clarity",
-        "Identifies conversational improvement areas"
+        "Measures content accessibility and clarity"
       ],
       "score": 6,
       "scoreClass": "yellow",
@@ -256,8 +243,7 @@
         "Analyzes FAQ structure and organization",
         "Evaluates FAQ content quality and relevance",
         "Assesses user information accessibility",
-        "Measures FAQ comprehensiveness",
-        "Identifies FAQ improvement opportunities"
+        "Measures FAQ comprehensiveness"
       ],
       "score": 7,
       "scoreClass": "green",
@@ -275,8 +261,7 @@
         "Analyzes user journey optimization",
         "Evaluates conversion path effectiveness",
         "Assesses user experience flow",
-        "Measures journey optimization metrics",
-        "Identifies journey improvement opportunities"
+        "Measures journey optimization metrics"
       ],
       "score": 5,
       "scoreClass": "yellow",
@@ -294,8 +279,7 @@
         "Analyzes user sentiment patterns",
         "Evaluates emotional responses to content",
         "Assesses user satisfaction levels",
-        "Measures content emotional impact",
-        "Identifies sentiment improvement opportunities"
+        "Measures content emotional impact"
       ],
       "score": 6,
       "scoreClass": "yellow",
@@ -313,8 +297,7 @@
         "Analyzes company registration and legal status",
         "Evaluates business compliance and legitimacy",
         "Assesses company trustworthiness",
-        "Measures business credibility signals",
-        "Identifies compliance improvement areas"
+        "Measures business credibility signals"
       ],
       "score": 5,
       "scoreClass": "yellow",
@@ -332,8 +315,7 @@
         "Analyzes contact information availability",
         "Evaluates business transparency and accessibility",
         "Assesses customer service availability",
-        "Measures business openness signals",
-        "Identifies transparency improvement areas"
+        "Measures business openness signals"
       ],
       "score": 9,
       "scoreClass": "green",
@@ -351,8 +333,7 @@
         "Analyzes ecommerce security policies",
         "Evaluates online business trust signals",
         "Assesses ecommerce credibility",
-        "Measures online security indicators",
-        "Identifies ecommerce trust improvement areas"
+        "Measures online security indicators"
       ],
       "score": 9,
       "scoreClass": "green",
@@ -370,8 +351,7 @@
         "Analyzes content freshness and update frequency",
         "Evaluates information currency and reliability",
         "Assesses content maintenance practices",
-        "Measures information trust signals",
-        "Identifies update frequency improvement areas"
+        "Measures information trust signals"
       ],
       "score": 10,
       "scoreClass": "green",
@@ -389,8 +369,7 @@
         "Analyzes policy page completeness and clarity",
         "Evaluates legal information transparency",
         "Assesses business compliance practices",
-        "Measures policy transparency signals",
-        "Identifies policy improvement areas"
+        "Measures policy transparency signals"
       ],
       "score": 3,
       "scoreClass": "red",
@@ -408,8 +387,7 @@
         "Analyzes content uniqueness and originality",
         "Evaluates competitive differentiation",
         "Assesses unique value proposition",
-        "Measures content distinctiveness",
-        "Identifies uniqueness improvement opportunities"
+        "Measures content distinctiveness"
       ],
       "score": 5,
       "scoreClass": "yellow",
