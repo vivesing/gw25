@@ -1,0 +1,400 @@
+{
+  "tableData": [
+    {
+      "agentName": "Content Internal Reviews Analysis Agent",
+      "category": "Experience",
+      "description": "This agent analyzes internal reviews and user feedback to assess content quality and user satisfaction.",
+      "functions": [
+        "Analyzes user reviews and ratings",
+        "Evaluates content engagement metrics",
+        "Assesses user sentiment and feedback patterns",
+        "Measures content effectiveness and user satisfaction",
+        "Identifies areas for content improvement based on user feedback"
+      ],
+      "score": 0,
+      "scoreClass": "red",
+      "weight": "7.5%",
+      "analysis": "Slow page load speed and poor mobile responsiveness",
+      "problems": "Major navigation issues on mobile",
+      "recommendation": "Optimize page speed and mobile navigation"
+    },
+    {
+      "agentName": "Author Credit Analysis Agent",
+      "category": "Experience",
+      "description": "This agent evaluates author credibility and expertise based on various factors including credentials, experience, and recognition.",
+      "functions": [
+        "Analyzes author credentials and qualifications",
+        "Evaluates author experience and expertise",
+        "Assesses author recognition and awards",
+        "Measures author credibility and trustworthiness",
+        "Identifies areas for author profile enhancement"
+      ],
+      "score": 6,
+      "scoreClass": "yellow",
+      "weight": "0%",
+      "analysis": "Poor user engagement metrics and low time on site",
+      "problems": "Very limited user-generated content",
+      "recommendation": "Implement interactive features and user engagement tools"
+    },
+    {
+      "agentName": "Sentiment Analysis Agent",
+      "category": "Experience",
+      "description": "This agent analyzes user sentiment and emotional responses to content to gauge user satisfaction and engagement.",
+      "functions": [
+        "Analyzes user sentiment patterns",
+        "Evaluates emotional responses to content",
+        "Assesses user satisfaction levels",
+        "Measures content emotional impact",
+        "Identifies sentiment improvement opportunities"
+      ],
+      "score": 6,
+      "scoreClass": "yellow",
+      "weight": "7.5%",
+      "analysis": "Poor user sentiment and engagement",
+      "problems": "Negative user sentiment detected",
+      "recommendation": "Improve user experience and address negative feedback"
+    },
+    {
+      "agentName": "Engagement Credibility Agent",
+      "category": "Experience",
+      "description": "This agent measures user engagement and interaction patterns to assess content effectiveness and user interest.",
+      "functions": [
+        "Analyzes user engagement metrics",
+        "Evaluates interaction patterns",
+        "Assesses content effectiveness",
+        "Measures user interest and participation",
+        "Identifies engagement improvement strategies"
+      ],
+      "score": 6,
+      "scoreClass": "yellow",
+      "weight": "4%",
+      "analysis": "Some mentions on authoritative industry sites",
+      "problems": "Limited brand mentions on authoritative sites",
+      "recommendation": "Increase PR and guest posting campaigns"
+    },
+    {
+      "agentName": "Organisation Schema Analysis Agent",
+      "category": "Experience",
+      "description": "This agent analyzes organizational schema markup and structured data to assess content organization and discoverability.",
+      "functions": [
+        "Analyzes organizational schema markup",
+        "Evaluates structured data implementation",
+        "Assesses content organization patterns",
+        "Measures discoverability and SEO structure",
+        "Identifies schema optimization opportunities"
+      ],
+      "score": 7,
+      "scoreClass": "green",
+      "weight": "5%",
+      "analysis": "Good structured data and schema markup",
+      "problems": "Could enhance schema implementation",
+      "recommendation": "Improve schema markup implementation"
+    },
+    {
+      "agentName": "Authoritativeness Analysis Agent",
+      "category": "Authoritativeness",
+      "description": "This agent evaluates the authority and credibility of content sources and backlinks to assess overall content authority.",
+      "functions": [
+        "Analyzes backlink quality and authority",
+        "Evaluates source credibility and reputation",
+        "Assesses domain authority and trust",
+        "Measures content authority signals",
+        "Identifies authority building opportunities"
+      ],
+      "score": 8,
+      "scoreClass": "green",
+      "weight": "7%",
+      "analysis": "Good backlinks from reputable sources",
+      "problems": "Could improve backlink quality",
+      "recommendation": "Continue building high-quality backlinks"
+    },
+    {
+      "agentName": "Content Internal Press Coverage Agent",
+      "category": "Expertise",
+      "description": "This agent analyzes internal press coverage and media mentions to assess content expertise and industry recognition.",
+      "functions": [
+        "Analyzes internal press coverage",
+        "Evaluates media mentions and citations",
+        "Assesses industry recognition and expertise",
+        "Measures content authority in media",
+        "Identifies press coverage opportunities"
+      ],
+      "score": 8,
+      "scoreClass": "green",
+      "weight": "2%",
+      "analysis": "Author credentials are mentioned but not detailed",
+      "problems": "Insufficient author bios and credentials",
+      "recommendation": "Add comprehensive author profiles with credentials"
+    },
+    {
+      "agentName": "Editorial Policy Analysis Agent",
+      "category": "Expertise",
+      "description": "This agent evaluates editorial policies and content standards to assess content quality and expertise.",
+      "functions": [
+        "Analyzes editorial policies and standards",
+        "Evaluates content quality guidelines",
+        "Assesses editorial expertise and processes",
+        "Measures content quality standards",
+        "Identifies editorial improvement areas"
+      ],
+      "score": 0,
+      "scoreClass": "red",
+      "weight": "0%",
+      "analysis": "Content shows some expertise but lacks depth",
+      "problems": "Thin content on key topics",
+      "recommendation": "Expand content with detailed research and examples"
+    },
+    {
+      "agentName": "Expertise Research Analysis Agent",
+      "category": "Expertise",
+      "description": "This agent analyzes research depth and methodology to assess content expertise and credibility.",
+      "functions": [
+        "Analyzes research methodology and depth",
+        "Evaluates source credibility and citations",
+        "Assesses research quality and rigor",
+        "Measures content expertise level",
+        "Identifies research improvement opportunities"
+      ],
+      "score": 6,
+      "scoreClass": "yellow",
+      "weight": "1%",
+      "analysis": "Basic research depth but needs improvement",
+      "problems": "Limited research citations and sources",
+      "recommendation": "Add more comprehensive research and citations"
+    },
+    {
+      "agentName": "Expertise Stats Analysis Agent",
+      "category": "Expertise",
+      "description": "This agent evaluates statistical data and evidence to assess content expertise and credibility.",
+      "functions": [
+        "Analyzes statistical data and evidence",
+        "Evaluates data quality and reliability",
+        "Assesses statistical methodology",
+        "Measures content statistical rigor",
+        "Identifies statistical improvement areas"
+      ],
+      "score": 3,
+      "scoreClass": "red",
+      "weight": "6%",
+      "analysis": "Some statistical data present",
+      "problems": "Limited statistical evidence and data",
+      "recommendation": "Include more statistical data and evidence"
+    },
+    {
+      "agentName": "Clarity Brevity Analysis Agent",
+      "category": "Semantics",
+      "description": "This agent analyzes content clarity and brevity to assess readability and user comprehension.",
+      "functions": [
+        "Analyzes content clarity and readability",
+        "Evaluates content brevity and conciseness",
+        "Assesses user comprehension levels",
+        "Measures content accessibility",
+        "Identifies clarity improvement opportunities"
+      ],
+      "score": 10,
+      "scoreClass": "green",
+      "weight": "5%",
+      "analysis": "Basic heading structure but needs improvement",
+      "problems": "Inconsistent heading hierarchy",
+      "recommendation": "Implement proper H1-H6 heading structure"
+    },
+    {
+      "agentName": "Content CTA Analysis Agent",
+      "category": "Semantics",
+      "description": "This agent evaluates call-to-action elements and conversion optimization in content.",
+      "functions": [
+        "Analyzes CTA placement and effectiveness",
+        "Evaluates conversion optimization strategies",
+        "Assesses user journey and conversion paths",
+        "Measures CTA performance and engagement",
+        "Identifies conversion improvement opportunities"
+      ],
+      "score": 7,
+      "scoreClass": "green",
+      "weight": "6%",
+      "analysis": "Moderate keyword relevance and optimization",
+      "problems": "Low keyword density and relevance",
+      "recommendation": "Optimize content for target keywords naturally"
+    },
+    {
+      "agentName": "Semantic Fitness Conversational Agent",
+      "category": "Semantics",
+      "description": "This agent analyzes conversational tone and natural language patterns in content.",
+      "functions": [
+        "Analyzes conversational tone and style",
+        "Evaluates natural language patterns",
+        "Assesses user-friendly content structure",
+        "Measures content accessibility and clarity",
+        "Identifies conversational improvement areas"
+      ],
+      "score": 7,
+      "scoreClass": "green",
+      "weight": "5%",
+      "analysis": "Basic meta descriptions present",
+      "problems": "Poor meta description quality",
+      "recommendation": "Write compelling, keyword-rich meta descriptions"
+    },
+    {
+      "agentName": "Semantic Fitness FAQ Agent",
+      "category": "Semantics",
+      "description": "This agent evaluates FAQ structure and content to assess user information accessibility.",
+      "functions": [
+        "Analyzes FAQ structure and organization",
+        "Evaluates FAQ content quality and relevance",
+        "Assesses user information accessibility",
+        "Measures FAQ comprehensiveness",
+        "Identifies FAQ improvement opportunities"
+      ],
+      "score": 6,
+      "scoreClass": "yellow",
+      "weight": "2.5%",
+      "analysis": "Basic FAQ structure present",
+      "problems": "Limited FAQ coverage and depth",
+      "recommendation": "Expand FAQ section with comprehensive answers"
+    },
+    {
+      "agentName": "Semantic Fitness Granular Journey Agent",
+      "category": "Semantics",
+      "description": "This agent analyzes user journey optimization and conversion path analysis.",
+      "functions": [
+        "Analyzes user journey optimization",
+        "Evaluates conversion path effectiveness",
+        "Assesses user experience flow",
+        "Measures journey optimization metrics",
+        "Identifies journey improvement opportunities"
+      ],
+      "score": 5,
+      "scoreClass": "yellow",
+      "weight": "6%",
+      "analysis": "Basic user journey optimization",
+      "problems": "Limited journey mapping and optimization",
+      "recommendation": "Improve user journey and conversion paths"
+    },
+    {
+      "agentName": "Uniqueness Analysis Agent",
+      "category": "Semantics",
+      "description": "This agent evaluates content uniqueness and originality to assess competitive differentiation.",
+      "functions": [
+        "Analyzes content uniqueness and originality",
+        "Evaluates competitive differentiation",
+        "Assesses unique value proposition",
+        "Measures content distinctiveness",
+        "Identifies uniqueness improvement opportunities"
+      ],
+      "score": 5,
+      "scoreClass": "yellow",
+      "weight": "9%",
+      "analysis": "Some unique content elements",
+      "problems": "Limited unique value proposition",
+      "recommendation": "Enhance unique content and value proposition"
+    },
+    {
+      "agentName": "Content Consistency Analysis Agent",
+      "category": "Trust",
+      "description": "This agent analyzes content consistency and reliability to assess trustworthiness and credibility.",
+      "functions": [
+        "Analyzes content consistency and reliability",
+        "Evaluates information accuracy and reliability",
+        "Assesses content trustworthiness",
+        "Measures content credibility signals",
+        "Identifies consistency improvement areas"
+      ],
+      "score": 3,
+      "scoreClass": "red",
+      "weight": "5%",
+      "analysis": "Basic security indicators and SSL certificate",
+      "problems": "Missing some trust signals",
+      "recommendation": "Add trust badges and security certifications"
+    },
+    {
+      "agentName": "Trust Company Registration Analysis Agent",
+      "category": "Trust",
+      "description": "This agent evaluates company registration and legal compliance to assess business trustworthiness.",
+      "functions": [
+        "Analyzes company registration and legal status",
+        "Evaluates business compliance and legitimacy",
+        "Assesses company trustworthiness",
+        "Measures business credibility signals",
+        "Identifies compliance improvement areas"
+      ],
+      "score": 7,
+      "scoreClass": "green",
+      "weight": "1%",
+      "analysis": "Basic privacy policy and terms of service",
+      "problems": "Privacy policy needs enhancement",
+      "recommendation": "Enhance privacy policy with more details"
+    },
+    {
+      "agentName": "Trust Contact Info Analysis Agent",
+      "category": "Trust",
+      "description": "This agent analyzes contact information and accessibility to assess business transparency and trust.",
+      "functions": [
+        "Analyzes contact information availability",
+        "Evaluates business transparency and accessibility",
+        "Assesses customer service availability",
+        "Measures business openness signals",
+        "Identifies transparency improvement areas"
+      ],
+      "score": 3,
+      "scoreClass": "red",
+      "weight": "5%",
+      "analysis": "Limited user reviews and testimonials",
+      "problems": "Very few recent reviews",
+      "recommendation": "Encourage more customer reviews"
+    },
+    {
+      "agentName": "Trust Ecommerce Policy Analysis Agent",
+      "category": "Trust",
+      "description": "This agent evaluates ecommerce policies and security measures to assess online business trustworthiness.",
+      "functions": [
+        "Analyzes ecommerce security policies",
+        "Evaluates online business trust signals",
+        "Assesses ecommerce credibility",
+        "Measures online security indicators",
+        "Identifies ecommerce trust improvement areas"
+      ],
+      "score": 9,
+      "scoreClass": "green",
+      "weight": "6%",
+      "analysis": "Basic ecommerce trust signals",
+      "problems": "Limited ecommerce security indicators",
+      "recommendation": "Add ecommerce security badges and policies"
+    },
+    {
+      "agentName": "Trust Last Updated Analysis Agent",
+      "category": "Trust",
+      "description": "This agent analyzes content freshness and update frequency to assess information reliability and trustworthiness.",
+      "functions": [
+        "Analyzes content freshness and update frequency",
+        "Evaluates information currency and reliability",
+        "Assesses content maintenance practices",
+        "Measures information trust signals",
+        "Identifies update frequency improvement areas"
+      ],
+      "score": 9,
+      "scoreClass": "green",
+      "weight": "7%",
+      "analysis": "Content freshness indicators present",
+      "problems": "Limited content update frequency",
+      "recommendation": "Update content more frequently"
+    },
+    {
+      "agentName": "Trust Policy Pages Analysis Agent",
+      "category": "Trust",
+      "description": "This agent evaluates policy pages and legal information to assess business transparency and compliance.",
+      "functions": [
+        "Analyzes policy page completeness and clarity",
+        "Evaluates legal information transparency",
+        "Assesses business compliance practices",
+        "Measures policy transparency signals",
+        "Identifies policy improvement areas"
+      ],
+      "score": 3,
+      "scoreClass": "red",
+      "weight": "2.5%",
+      "analysis": "Basic policy page structure",
+      "problems": "Limited policy page coverage",
+      "recommendation": "Enhance policy pages and legal information"
+    }
+  ]
+} 

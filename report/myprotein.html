@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EEATS+ Quality Report</title>
   <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
   <header style="position:relative; overflow:hidden;">
@@ -86,21 +87,21 @@
 
     <h2>Problems Identified (Low Scoring Factors)</h2>
     <details open>
-      <summary>Experience (30)</summary>
+      <summary>Experience <span style="color: #f56565; font-weight: 600;">(30)</span></summary>
       <ul>
         <li>Poor user engagement metrics and low time on site</li>
         <li>Limited user-generated content and interactions</li>
       </ul>
     </details>
     <details open>
-      <summary>Expertise (43)</summary>
+      <summary>Expertise <span style="color: #facc15; font-weight: 600;">(43)</span></summary>
       <ul>
         <li>Insufficient author bios or credentials listed</li>
         <li>Thin content on key topics</li>
       </ul>
     </details>
     <details open>
-      <summary>Trust (60)</summary>
+      <summary>Trust <span style="color: #facc15; font-weight: 600;">(60)</span></summary>
       <ul>
         <li>Missing or weak security indicators</li>
         <li>Incomplete privacy policy and terms of service</li>
@@ -148,7 +149,7 @@
 
     <h2>Granular EEATS Analysis</h2>
     <div class="table-container">
-      <table class="analysis-table">
+      <table class="analysis-table" id="analysis-table">
         <thead>
           <tr>
             <th>Factor</th>
@@ -159,247 +160,34 @@
             <th>Recommendation</th>
           </tr>
         </thead>
-        <tbody>
-          <!-- Experience Factors -->
-          <tr>
-            <td>Content Internal Reviews Analysis Agent</td>
-            <td><span class="score-badge red">0</span></td>
-            <td>7.5%</td>
-            <td>Slow page load speed and poor mobile responsiveness</td>
-            <td>Major navigation issues on mobile</td>
-            <td>Optimize page speed and mobile navigation</td>
-          </tr>
-          <tr>
-            <td>Author Credit Analysis Agent</td>
-            <td><span class="score-badge yellow">6</span></td>
-            <td>0%</td>
-            <td>Poor user engagement metrics and low time on site</td>
-            <td>Very limited user-generated content</td>
-            <td>Implement interactive features and user engagement tools</td>
-          </tr>
-          <tr>
-            <td>Sentiment Analysis Agent</td>
-            <td><span class="score-badge yellow">6</span></td>
-            <td>7.5%</td>
-            <td>Poor user sentiment and engagement</td>
-            <td>Negative user sentiment detected</td>
-            <td>Improve user experience and address negative feedback</td>
-          </tr>
-          <tr>
-            <td>Engagement Credibility Agent</td>
-            <td><span class="score-badge yellow">6</span></td>
-            <td>4%</td>
-            <td>Some mentions on authoritative industry sites</td>
-            <td>Limited brand mentions on authoritative sites</td>
-            <td>Increase PR and guest posting campaigns</td>
-          </tr>
-          <tr>
-            <td>Organisation Schema Analysis Agent</td>
-            <td><span class="score-badge green">7</span></td>
-            <td>5%</td>
-            <td>Good structured data and schema markup</td>
-            <td>Could enhance schema implementation</td>
-            <td>Improve schema markup implementation</td>
-          </tr>
-          <tr>
-            <td>Authoritativeness Analysis Agent</td>
-            <td><span class="score-badge green">8</span></td>
-            <td>7%</td>
-            <td>Good backlinks from reputable sources</td>
-            <td>Could improve backlink quality</td>
-            <td>Continue building high-quality backlinks</td>
-          </tr>
-          <!-- Authoritativeness Factors -->
-          <tr>
-            <td>Authoritativeness Analysis Agent</td>
-            <td><span class="score-badge green">8</span></td>
-            <td>7%</td>
-            <td>Good backlinks from reputable sources</td>
-            <td>Could improve backlink quality</td>
-            <td>Continue building high-quality backlinks</td>
-          </tr>
-          <tr>
-            <td>Engagement Credibility Agent</td>
-            <td><span class="score-badge yellow">6</span></td>
-            <td>4%</td>
-            <td>Some mentions on authoritative industry sites</td>
-            <td>Limited brand mentions on authoritative sites</td>
-            <td>Increase PR and guest posting campaigns</td>
-          </tr>
-          <tr>
-            <td>Organisation Schema Analysis Agent</td>
-            <td><span class="score-badge green">7</span></td>
-            <td>5%</td>
-            <td>Good structured data and schema markup</td>
-            <td>Could enhance schema implementation</td>
-            <td>Improve schema markup implementation</td>
-          </tr>
-          
-          <!-- Experience Factors -->
-          <tr>
-            <td>Author Credit Analysis Agent</td>
-            <td><span class="score-badge yellow">6</span></td>
-            <td>0%</td>
-            <td>Poor user engagement metrics and low time on site</td>
-            <td>Very limited user-generated content</td>
-            <td>Implement interactive features and user engagement tools</td>
-          </tr>
-          <tr>
-            <td>Content Internal Reviews Analysis Agent</td>
-            <td><span class="score-badge red">0</span></td>
-            <td>7.5%</td>
-            <td>Slow page load speed and poor mobile responsiveness</td>
-            <td>Major navigation issues on mobile</td>
-            <td>Optimize page speed and mobile navigation</td>
-          </tr>
-          <tr>
-            <td>Sentiment Analysis Agent</td>
-            <td><span class="score-badge yellow">6</span></td>
-            <td>7.5%</td>
-            <td>Poor user sentiment and engagement</td>
-            <td>Negative user sentiment detected</td>
-            <td>Improve user experience and address negative feedback</td>
-          </tr>
-          
-          <!-- Expertise Factors -->
-          <tr>
-            <td>Content Internal Press Coverage Agent</td>
-            <td><span class="score-badge green">8</span></td>
-            <td>2%</td>
-            <td>Author credentials are mentioned but not detailed</td>
-            <td>Insufficient author bios and credentials</td>
-            <td>Add comprehensive author profiles with credentials</td>
-          </tr>
-          <tr>
-            <td>Editorial Policy Analysis Agent</td>
-            <td><span class="score-badge red">0</span></td>
-            <td>0%</td>
-            <td>Content shows some expertise but lacks depth</td>
-            <td>Thin content on key topics</td>
-            <td>Expand content with detailed research and examples</td>
-          </tr>
-          <tr>
-            <td>Expertise Research Analysis Agent</td>
-            <td><span class="score-badge yellow">6</span></td>
-            <td>1%</td>
-            <td>Basic research depth but needs improvement</td>
-            <td>Limited research citations and sources</td>
-            <td>Add more comprehensive research and citations</td>
-          </tr>
-          <tr>
-            <td>Expertise Stats Analysis Agent</td>
-            <td><span class="score-badge red">3</span></td>
-            <td>6%</td>
-            <td>Some statistical data present</td>
-            <td>Limited statistical evidence and data</td>
-            <td>Include more statistical data and evidence</td>
-          </tr>
-          
-          <!-- Semantic Alignment Factors -->
-          <tr>
-            <td>Clarity Brevity Analysis Agent</td>
-            <td><span class="score-badge green">10</span></td>
-            <td>5%</td>
-            <td>Basic heading structure but needs improvement</td>
-            <td>Inconsistent heading hierarchy</td>
-            <td>Implement proper H1-H6 heading structure</td>
-          </tr>
-          <tr>
-            <td>Content CTA Analysis Agent</td>
-            <td><span class="score-badge green">7</span></td>
-            <td>6%</td>
-            <td>Moderate keyword relevance and optimization</td>
-            <td>Low keyword density and relevance</td>
-            <td>Optimize content for target keywords naturally</td>
-          </tr>
-          <tr>
-            <td>Semantic Fitness Conversational Agent</td>
-            <td><span class="score-badge green">7</span></td>
-            <td>5%</td>
-            <td>Basic meta descriptions present</td>
-            <td>Poor meta description quality</td>
-            <td>Write compelling, keyword-rich meta descriptions</td>
-          </tr>
-          <tr>
-            <td>Semantic Fitness FAQ Agent</td>
-            <td><span class="score-badge yellow">6</span></td>
-            <td>2.5%</td>
-            <td>Basic FAQ structure present</td>
-            <td>Limited FAQ coverage and depth</td>
-            <td>Expand FAQ section with comprehensive answers</td>
-          </tr>
-          <tr>
-            <td>Semantic Fitness Granular Journey Agent</td>
-            <td><span class="score-badge yellow">5</span></td>
-            <td>6%</td>
-            <td>Basic user journey optimization</td>
-            <td>Limited journey mapping and optimization</td>
-            <td>Improve user journey and conversion paths</td>
-          </tr>
-          <tr>
-            <td>Uniqueness Analysis Agent</td>
-            <td><span class="score-badge yellow">5</span></td>
-            <td>9%</td>
-            <td>Some unique content elements</td>
-            <td>Limited unique value proposition</td>
-            <td>Enhance unique content and value proposition</td>
-          </tr>
-          
-          <!-- Trustworthiness Factors -->
-          <tr>
-            <td>Content Consistency Analysis Agent</td>
-            <td><span class="score-badge red">3</span></td>
-            <td>5%</td>
-            <td>Basic security indicators and SSL certificate</td>
-            <td>Missing some trust signals</td>
-            <td>Add trust badges and security certifications</td>
-          </tr>
-          <tr>
-            <td>Trust Company Registration Analysis Agent</td>
-            <td><span class="score-badge green">7</span></td>
-            <td>1%</td>
-            <td>Basic privacy policy and terms of service</td>
-            <td>Privacy policy needs enhancement</td>
-            <td>Enhance privacy policy with more details</td>
-          </tr>
-          <tr>
-            <td>Trust Contact Info Analysis Agent</td>
-            <td><span class="score-badge red">3</span></td>
-            <td>5%</td>
-            <td>Limited user reviews and testimonials</td>
-            <td>Very few recent reviews</td>
-            <td>Encourage more customer reviews</td>
-          </tr>
-          <tr>
-            <td>Trust Ecommerce Policy Analysis Agent</td>
-            <td><span class="score-badge green">9</span></td>
-            <td>6%</td>
-            <td>Basic ecommerce trust signals</td>
-            <td>Limited ecommerce security indicators</td>
-            <td>Add ecommerce security badges and policies</td>
-          </tr>
-          <tr>
-            <td>Trust Last Updated Analysis Agent</td>
-            <td><span class="score-badge green">9</span></td>
-            <td>7%</td>
-            <td>Content freshness indicators present</td>
-            <td>Limited content update frequency</td>
-            <td>Update content more frequently</td>
-          </tr>
-          <tr>
-            <td>Trust Policy Pages Analysis Agent</td>
-            <td><span class="score-badge red">3</span></td>
-            <td>2.5%</td>
-            <td>Basic policy page structure</td>
-            <td>Limited policy page coverage</td>
-            <td>Enhance policy pages and legal information</td>
-          </tr>
+        <tbody id="table-body">
+          <!-- Table rows will be dynamically generated from JSON -->
         </tbody>
       </table>
     </div>
   </div>
 
   <div id="pie-tooltip" class="pie-tooltip" style="display:none; position:absolute;"></div>
+
+  <!-- Agent Info Popup -->
+  <div id="agent-popup-overlay" class="popup-overlay" onclick="hideAgentInfo()"></div>
+  <div id="agent-popup-content" class="popup-content" style="display: none;">
+    <button class="popup-close" onclick="hideAgentInfo()">&times;</button>
+    <div class="popup-header">
+      <h3 id="popup-title" class="popup-title"></h3>
+      <p id="popup-subtitle" class="popup-subtitle"></p>
+    </div>
+    <div class="popup-body">
+      <div class="popup-section">
+        <h4>Description</h4>
+        <p id="popup-description"></p>
+      </div>
+      <div class="popup-section">
+        <h4>Key Functions</h4>
+        <ul id="popup-functions"></ul>
+      </div>
+    </div>
+  </div>
 
   <script>
     // Set the report generation date and time
@@ -415,6 +203,9 @@
         timeZoneName: 'short'
       };
       document.getElementById('report-date').textContent = now.toLocaleDateString('en-US', options);
+
+      // Load and render table data from JSON
+      loadTableData();
 
       // --- PIE CHART LOGIC ---
       const factors = [
@@ -491,6 +282,106 @@
           else ring.classList.add('red');
         }
       });
+    });
+
+    // Agent Info Popup Functions
+    function showAgentInfo(agentName, category, description, functions) {
+      // Populate popup content
+      document.getElementById('popup-title').textContent = agentName;
+      document.getElementById('popup-subtitle').textContent = `${category} Agent`;
+      document.getElementById('popup-description').textContent = description;
+      
+      // Populate functions list
+      const functionsList = document.getElementById('popup-functions');
+      functionsList.innerHTML = '';
+      functions.forEach(function(func) {
+        const li = document.createElement('li');
+        li.textContent = func;
+        functionsList.appendChild(li);
+      });
+      
+      // Show popup
+      const overlay = document.getElementById('agent-popup-overlay');
+      const content = document.getElementById('agent-popup-content');
+      
+      overlay.style.display = 'block';
+      content.style.display = 'block';
+      
+      // Ensure proper positioning
+      content.style.position = 'fixed';
+      content.style.top = '50%';
+      content.style.left = '50%';
+      content.style.transform = 'translate(-50%, -50%)';
+    }
+
+    function hideAgentInfo() {
+      const overlay = document.getElementById('agent-popup-overlay');
+      const content = document.getElementById('agent-popup-content');
+      
+      overlay.style.display = 'none';
+      content.style.display = 'none';
+    }
+
+    // Load and render table data from JSON
+    async function loadTableData() {
+      try {
+        const response = await fetch('table-data.json');
+        const data = await response.json();
+        renderTable(data.tableData);
+      } catch (error) {
+        console.error('Error loading table data:', error);
+        // Fallback: render with hardcoded data if JSON fails to load
+        renderTable([]);
+      }
+    }
+
+    // Render table from JSON data
+    function renderTable(tableData) {
+      const tableBody = document.getElementById('table-body');
+      tableBody.innerHTML = '';
+
+      tableData.forEach(row => {
+        const tr = document.createElement('tr');
+        
+        // Create agent name cell with info icon
+        const agentCell = document.createElement('td');
+        agentCell.innerHTML = `${row.agentName} <span class="info-icon" onclick="showAgentInfo('${row.agentName}', '${row.category}', '${row.description}', ${JSON.stringify(row.functions)})">i</span>`;
+        
+        // Create score cell
+        const scoreCell = document.createElement('td');
+        scoreCell.innerHTML = `<span class="score-badge ${row.scoreClass}">${row.score}</span>`;
+        
+        // Create other cells
+        const weightCell = document.createElement('td');
+        weightCell.textContent = row.weight;
+        
+        const analysisCell = document.createElement('td');
+        analysisCell.textContent = row.analysis;
+        
+        const problemsCell = document.createElement('td');
+        problemsCell.textContent = row.problems;
+        
+        const recommendationCell = document.createElement('td');
+        recommendationCell.textContent = row.recommendation;
+        
+        // Append all cells to the row
+        tr.appendChild(agentCell);
+        tr.appendChild(scoreCell);
+        tr.appendChild(weightCell);
+        tr.appendChild(analysisCell);
+        tr.appendChild(problemsCell);
+        tr.appendChild(recommendationCell);
+        
+        // Append row to table body
+        tableBody.appendChild(tr);
+      });
+    }
+
+    // Close popup on escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        hideAgentInfo();
+      }
     });
   </script>
 
