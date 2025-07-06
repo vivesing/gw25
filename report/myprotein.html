@@ -306,7 +306,7 @@
       const weightElement = document.getElementById('popup-weight');
       
       scoreElement.textContent = score;
-      scoreElement.className = `popup-score-badge ${getScoreClass(score)}`;
+      scoreElement.className = `popup-score-badge ${getScoreClass(score, weight)}`;
       weightElement.textContent = `Weight: ${weight}`;
       
       // Populate functions list
@@ -332,9 +332,12 @@
       content.style.transform = 'translate(-50%, -50%)';
     }
 
-    function getScoreClass(score) {
-      if (score >= 75) return 'green';
-      else if (score >= 60) return 'yellow';
+    function getScoreClass(score, weight) {
+      // If weight is 0, return grey regardless of score
+      if (weight === '0%' || weight === 0) return 'grey';
+      
+      if (score >= 8) return 'green';
+      else if (score >= 5) return 'yellow';
       else return 'red';
     }
 
@@ -379,7 +382,8 @@
         
         // Create score cell
         const scoreCell = document.createElement('td');
-        scoreCell.innerHTML = `<span class="score-badge ${row.scoreClass}">${row.score}</span>`;
+        const scoreClass = getScoreClass(row.score, row.weight);
+        scoreCell.innerHTML = `<span class="score-badge ${scoreClass}">${row.score}</span>`;
         
         // Create other cells
         const weightCell = document.createElement('td');
