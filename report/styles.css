@@ -228,10 +228,10 @@ h2::after {
 }
 
 .score-ring.red, .score-badge.red {
-  --ring-color: #ef4444;
-  border-color: #ef4444;
-  color: #ef4444;
-  background: rgba(239,68,68,0.10);
+  --ring-color: #ed8936;
+  border-color: #ed8936;
+  color: #ed8936;
+  background: rgba(237,137,54,0.10);
 }
 
 .score-card > div:last-child {
@@ -430,9 +430,9 @@ a:hover {
 }
 
 .score-badge.red {
-  background: rgba(245, 101, 101, 0.2);
-  color: #f56565;
-  border: 1px solid rgba(245, 101, 101, 0.3);
+  background: rgba(237, 137, 54, 0.2);
+  color: #ed8936;
+  border: 1px solid rgba(237, 137, 54, 0.3);
 }
 
 /* Responsive design */

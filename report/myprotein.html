@@ -45,7 +45,7 @@
             <!-- Pie segments will be injected by JS -->
             <g id="pie-segments"></g>
             <circle cx="80" cy="80" r="56" fill="#1a202c"/>
-            <text id="pie-center-score" x="80" y="90" text-anchor="middle" font-size="38" font-weight="bold" fill="#ed8936">57</text>
+            <text id="pie-center-score" x="80" y="90" text-anchor="middle" font-size="38" font-weight="bold" fill="#ed8936">62</text>
             <text id="pie-center-label" x="80" y="115" text-anchor="middle" font-size="15" fill="#a0aec0">Combined</text>
           </svg>
         </div>
@@ -53,33 +53,33 @@
         <div class="combined-score-breakdown">
           <div class="breakdown-title">Weight Breakdown PDP Pages</div>
           <ul>
-            <li><span>Semantics</span> <span>34%</span></li>
+            <li><span>Semantics</span> <span>29%</span></li>
             <li><span>Trust</span> <span>27%</span></li>
             <li><span>Authoritativeness</span> <span>16%</span></li>
-            <li><span>Experience</span> <span>15%</span></li>
-            <li><span>Expertise</span> <span>9%</span></li>
+            <li><span>Experience</span> <span>16%</span></li>
+            <li><span>Expertise</span> <span>13%</span></li>
           </ul>
         </div>
       </div>
       <div class="score-grid">
         <div class="score-card">
-          <div class="score-ring red">30</div>
+          <div class="score-ring red">64</div>
           <div>Experience</div>
         </div>
         <div class="score-card">
-          <div class="score-ring yellow">43</div>
+          <div class="score-ring yellow">51</div>
           <div>Expertise</div>
         </div>
         <div class="score-card">
-          <div class="score-ring green">72</div>
+          <div class="score-ring green">77</div>
           <div>Authoritativeness</div>
         </div>
         <div class="score-card">
-          <div class="score-ring yellow">60</div>
+          <div class="score-ring yellow">67</div>
           <div>Trust</div>
         </div>
         <div class="score-card">
-          <div class="score-ring yellow">65</div>
+          <div class="score-ring yellow">52</div>
           <div>Semantics Score</div>
         </div>
       </div>
@@ -87,21 +87,21 @@
 
     <h2>Problems Identified (Low Scoring Factors)</h2>
     <details open>
-      <summary>Experience <span style="color: #f56565; font-weight: 600;">(30)</span></summary>
+      <summary>Experience <span style="color: #facc15; font-weight: 600;">(64)</span></summary>
       <ul>
         <li>Poor user engagement metrics and low time on site</li>
         <li>Limited user-generated content and interactions</li>
       </ul>
     </details>
     <details open>
-      <summary>Expertise <span style="color: #facc15; font-weight: 600;">(43)</span></summary>
+      <summary>Expertise <span style="color: #ed8936; font-weight: 600;">(51)</span></summary>
       <ul>
         <li>Insufficient author bios or credentials listed</li>
         <li>Thin content on key topics</li>
       </ul>
     </details>
     <details open>
-      <summary>Trust <span style="color: #facc15; font-weight: 600;">(60)</span></summary>
+      <summary>Trust <span style="color: #facc15; font-weight: 600;">(67)</span></summary>
       <ul>
         <li>Missing or weak security indicators</li>
         <li>Incomplete privacy policy and terms of service</li>
@@ -110,28 +110,28 @@
 
     <h2>Suggestions / Recommendations</h2>
     <details open>
-      <summary>For Experience <span style="color: #f56565; font-weight: 600;">(30)</span></summary>
+      <summary>For Experience <span style="color: #facc15; font-weight: 600;">(64)</span></summary>
       <ul>
         <li>Improve user engagement through interactive content</li>
         <li>Add user reviews, testimonials, and community features</li>
       </ul>
     </details>
     <details open>
-      <summary>For Expertise <span style="color: #facc15; font-weight: 600;">(43)</span></summary>
+      <summary>For Expertise <span style="color: #ed8936; font-weight: 600;">(51)</span></summary>
       <ul>
         <li>Add detailed author bios with credentials</li>
         <li>Expand thin pages with well-researched content</li>
       </ul>
     </details>
     <details open>
-      <summary>For Trust <span style="color: #facc15; font-weight: 600;">(60)</span></summary>
+      <summary>For Trust <span style="color: #facc15; font-weight: 600;">(67)</span></summary>
       <ul>
         <li>Add security badges and SSL certificates</li>
         <li>Enhance privacy policy and terms of service</li>
       </ul>
     </details>
     <details open>
-      <summary>For Semantics <span style="color: #facc15; font-weight: 600;">(65)</span></summary>
+      <summary>For Semantics <span style="color: #ed8936; font-weight: 600;">(52)</span></summary>
       <ul>
         <li>Implement proper H1-H6 heading structure</li>
         <li>Optimize content for target keywords naturally</li>
@@ -139,7 +139,7 @@
       </ul>
     </details>
     <details open>
-      <summary>For Authoritativeness <span style="color: #48bb78; font-weight: 600;">(72)</span></summary>
+      <summary>For Authoritativeness <span style="color: #48bb78; font-weight: 600;">(77)</span></summary>
       <ul>
         <li>Continue building high-quality backlinks</li>
         <li>Increase PR and guest posting campaigns</li>
@@ -209,13 +209,13 @@
 
       // --- PIE CHART LOGIC ---
       const factors = [
-        { name: 'Experience', score: 30, color: '#f56565' },
-        { name: 'Expertise', score: 43, color: '#facc15' },
-        { name: 'Authoritativeness', score: 72, color: '#48bb78' },
-        { name: 'Trust', score: 60, color: '#facc15' },
-        { name: 'Semantics', score: 65, color: '#facc15' }
+        { name: 'Experience', score: 64, color: '#facc15' },
+        { name: 'Expertise', score: 51, color: '#ed8936' },
+        { name: 'Authoritativeness', score: 77, color: '#48bb78' },
+        { name: 'Trust', score: 67, color: '#facc15' },
+        { name: 'Semantics', score: 52, color: '#ed8936' }
       ];
-      const weights = [0.15, 0.09, 0.16, 0.27, 0.34];
+      const weights = [0.16, 0.13, 0.16, 0.27, 0.29];
       const total = 100;
       const pie = document.getElementById('pie-segments');
       const tooltip = document.getElementById('pie-tooltip');
@@ -255,7 +255,7 @@
           tooltip.style.top = (e.clientY - 10) + 'px';
         });
         path.addEventListener('mouseleave', function() {
-          document.getElementById('pie-center-score').textContent = '57';
+          document.getElementById('pie-center-score').textContent = '62';
           document.getElementById('pie-center-score').setAttribute('fill', '#ed8936');
           document.getElementById('pie-center-label').textContent = 'Combined';
           tooltip.style.display = 'none';
@@ -277,8 +277,8 @@
         if (score !== undefined) {
           const ring = card.querySelector('.score-ring');
           ring.classList.remove('green', 'yellow', 'red');
-          if (score >= 70) ring.classList.add('green');
-          else if (score >= 40) ring.classList.add('yellow');
+          if (score >= 75) ring.classList.add('green');
+          else if (score >= 60) ring.classList.add('yellow');
           else ring.classList.add('red');
         }
       });

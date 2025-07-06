@@ -1,6 +1,7 @@
 {
   "tableData": [
     {
+      "id": "content_internal_reviews_analysis_agent",
       "agentName": "Content Internal Reviews Analysis Agent",
       "category": "Experience",
       "description": "This agent analyzes internal reviews and user feedback to assess content quality and user satisfaction.",
@@ -13,12 +14,13 @@
       ],
       "score": 0,
       "scoreClass": "red",
-      "weight": "7.5%",
+      "weight": "7%",
       "analysis": "Slow page load speed and poor mobile responsiveness",
       "problems": "Major navigation issues on mobile",
       "recommendation": "Optimize page speed and mobile navigation"
     },
     {
+      "id": "author_credit_analysis_agent",
       "agentName": "Author Credit Analysis Agent",
       "category": "Experience",
       "description": "This agent evaluates author credibility and expertise based on various factors including credentials, experience, and recognition.",
@@ -37,6 +39,7 @@
       "recommendation": "Implement interactive features and user engagement tools"
     },
     {
+      "id": "sentiment_analysis_agent",
       "agentName": "Sentiment Analysis Agent",
       "category": "Experience",
       "description": "This agent analyzes user sentiment and emotional responses to content to gauge user satisfaction and engagement.",
@@ -49,12 +52,13 @@
       ],
       "score": 6,
       "scoreClass": "yellow",
-      "weight": "7.5%",
+      "weight": "9%",
       "analysis": "Poor user sentiment and engagement",
       "problems": "Negative user sentiment detected",
       "recommendation": "Improve user experience and address negative feedback"
     },
     {
+      "id": "engagement_credibility_agent",
       "agentName": "Engagement Credibility Agent",
       "category": "Experience",
       "description": "This agent measures user engagement and interaction patterns to assess content effectiveness and user interest.",
@@ -73,6 +77,7 @@
       "recommendation": "Increase PR and guest posting campaigns"
     },
     {
+      "id": "organisation_schema_analysis_agent",
       "agentName": "Organisation Schema Analysis Agent",
       "category": "Experience",
       "description": "This agent analyzes organizational schema markup and structured data to assess content organization and discoverability.",
@@ -91,6 +96,7 @@
       "recommendation": "Improve schema markup implementation"
     },
     {
+      "id": "authoritativeness_analysis_agent",
       "agentName": "Authoritativeness Analysis Agent",
       "category": "Authoritativeness",
       "description": "This agent evaluates the authority and credibility of content sources and backlinks to assess overall content authority.",
@@ -109,6 +115,7 @@
       "recommendation": "Continue building high-quality backlinks"
     },
     {
+      "id": "content_internal_press_coverage_agent",
       "agentName": "Content Internal Press Coverage Agent",
       "category": "Expertise",
       "description": "This agent analyzes internal press coverage and media mentions to assess content expertise and industry recognition.",
@@ -127,6 +134,7 @@
       "recommendation": "Add comprehensive author profiles with credentials"
     },
     {
+      "id": "editoral_policy_analysis_agent",
       "agentName": "Editorial Policy Analysis Agent",
       "category": "Expertise",
       "description": "This agent evaluates editorial policies and content standards to assess content quality and expertise.",
@@ -145,6 +153,7 @@
       "recommendation": "Expand content with detailed research and examples"
     },
     {
+      "id": "expertise_research_analysis_agent",
       "agentName": "Expertise Research Analysis Agent",
       "category": "Expertise",
       "description": "This agent analyzes research depth and methodology to assess content expertise and credibility.",
@@ -157,12 +166,13 @@
       ],
       "score": 6,
       "scoreClass": "yellow",
-      "weight": "1%",
+      "weight": "3%",
       "analysis": "Basic research depth but needs improvement",
       "problems": "Limited research citations and sources",
       "recommendation": "Add more comprehensive research and citations"
     },
     {
+      "id": "expertise_stats_analysis_agent",
       "agentName": "Expertise Stats Analysis Agent",
       "category": "Expertise",
       "description": "This agent evaluates statistical data and evidence to assess content expertise and credibility.",
@@ -175,12 +185,13 @@
       ],
       "score": 3,
       "scoreClass": "red",
-      "weight": "6%",
+      "weight": "8%",
       "analysis": "Some statistical data present",
       "problems": "Limited statistical evidence and data",
       "recommendation": "Include more statistical data and evidence"
     },
     {
+      "id": "clarity_brevity_analysis_agent",
       "agentName": "Clarity Brevity Analysis Agent",
       "category": "Semantics",
       "description": "This agent analyzes content clarity and brevity to assess readability and user comprehension.",
@@ -199,6 +210,7 @@
       "recommendation": "Implement proper H1-H6 heading structure"
     },
     {
+      "id": "content_cta_analysis_agent",
       "agentName": "Content CTA Analysis Agent",
       "category": "Semantics",
       "description": "This agent evaluates call-to-action elements and conversion optimization in content.",
@@ -217,6 +229,7 @@
       "recommendation": "Optimize content for target keywords naturally"
     },
     {
+      "id": "semantic_fitness_conversational_agent",
       "agentName": "Semantic Fitness Conversational Agent",
       "category": "Semantics",
       "description": "This agent analyzes conversational tone and natural language patterns in content.",
@@ -229,12 +242,13 @@
       ],
       "score": 7,
       "scoreClass": "green",
-      "weight": "5%",
+      "weight": "0%",
       "analysis": "Basic meta descriptions present",
       "problems": "Poor meta description quality",
       "recommendation": "Write compelling, keyword-rich meta descriptions"
     },
     {
+      "id": "semantic_fitness_faq_agent",
       "agentName": "Semantic Fitness FAQ Agent",
       "category": "Semantics",
       "description": "This agent evaluates FAQ structure and content to assess user information accessibility.",
@@ -253,6 +267,7 @@
       "recommendation": "Expand FAQ section with comprehensive answers"
     },
     {
+      "id": "semantic_fitness_granular_journey_agent",
       "agentName": "Semantic Fitness Granular Journey Agent",
       "category": "Semantics",
       "description": "This agent analyzes user journey optimization and conversion path analysis.",
@@ -271,6 +286,7 @@
       "recommendation": "Improve user journey and conversion paths"
     },
     {
+      "id": "uniquieness_analysis_agent",
       "agentName": "Uniqueness Analysis Agent",
       "category": "Semantics",
       "description": "This agent evaluates content uniqueness and originality to assess competitive differentiation.",
@@ -289,6 +305,7 @@
       "recommendation": "Enhance unique content and value proposition"
     },
     {
+      "id": "content_consistency_analysis_agent",
       "agentName": "Content Consistency Analysis Agent",
       "category": "Trust",
       "description": "This agent analyzes content consistency and reliability to assess trustworthiness and credibility.",
@@ -307,6 +324,7 @@
       "recommendation": "Add trust badges and security certifications"
     },
     {
+      "id": "trust_company_registration_analysis_agent",
       "agentName": "Trust Company Registration Analysis Agent",
       "category": "Trust",
       "description": "This agent evaluates company registration and legal compliance to assess business trustworthiness.",
@@ -325,6 +343,7 @@
       "recommendation": "Enhance privacy policy with more details"
     },
     {
+      "id": "trust_contact_info_analysis_agent",
       "agentName": "Trust Contact Info Analysis Agent",
       "category": "Trust",
       "description": "This agent analyzes contact information and accessibility to assess business transparency and trust.",
@@ -343,6 +362,7 @@
       "recommendation": "Encourage more customer reviews"
     },
     {
+      "id": "trust_ecommerce_policy_analysis_agent",
       "agentName": "Trust Ecommerce Policy Analysis Agent",
       "category": "Trust",
       "description": "This agent evaluates ecommerce policies and security measures to assess online business trustworthiness.",
@@ -361,6 +381,7 @@
       "recommendation": "Add ecommerce security badges and policies"
     },
     {
+      "id": "trust_last_updated_analysis_agent",
       "agentName": "Trust Last Updated Analysis Agent",
       "category": "Trust",
       "description": "This agent analyzes content freshness and update frequency to assess information reliability and trustworthiness.",
@@ -379,6 +400,7 @@
       "recommendation": "Update content more frequently"
     },
     {
+      "id": "trust_policy_pages_analysis_agent",
       "agentName": "Trust Policy Pages Analysis Agent",
       "category": "Trust",
       "description": "This agent evaluates policy pages and legal information to assess business transparency and compliance.",
