@@ -153,9 +153,8 @@
         <thead>
           <tr>
             <th>Factor</th>
-            <th>Score (0-10)</th>
+            <th>Score</th>
             <th>Weight</th>
-            <th>Analysis</th>
             <th>Problems</th>
             <th>Recommendation</th>
           </tr>
@@ -184,6 +183,10 @@
       <div class="popup-section">
         <h4>Description</h4>
         <p id="popup-description"></p>
+      </div>
+      <div class="popup-section">
+        <h4>Analysis</h4>
+        <p id="popup-analysis"></p>
       </div>
       <div class="popup-section">
         <h4>Key Functions</h4>
@@ -295,7 +298,7 @@
     });
 
     // Agent Info Popup Functions
-    function showAgentInfo(agentName, category, description, functions, score, weight) {
+    function showAgentInfo(agentName, category, description, functions, score, weight, analysis) {
       // Populate popup content
       document.getElementById('popup-title').textContent = agentName;
       document.getElementById('popup-subtitle').textContent = `${category} Agent`;
@@ -308,6 +311,9 @@
       scoreElement.textContent = score;
       scoreElement.className = `popup-score-badge ${getScoreClass(score, weight)}`;
       weightElement.textContent = `Weight: ${weight}`;
+      
+      // Populate analysis
+      document.getElementById('popup-analysis').textContent = analysis;
       
       // Populate functions list
       const functionsList = document.getElementById('popup-functions');
@@ -377,7 +383,7 @@
         // Add click event listener to the info icon
         const infoIcon = agentCell.querySelector('.info-icon');
         infoIcon.addEventListener('click', function() {
-          showAgentInfo(row.agentName, row.category, row.description, row.functions, row.score, row.weight);
+          showAgentInfo(row.agentName, row.category, row.description, row.functions, row.score, row.weight, row.analysis);
         });
         
         // Create score cell
@@ -389,9 +395,6 @@
         const weightCell = document.createElement('td');
         weightCell.textContent = row.weight;
         
-        const analysisCell = document.createElement('td');
-        analysisCell.textContent = row.analysis;
-        
         const problemsCell = document.createElement('td');
         problemsCell.textContent = row.problems;
         
@@ -402,7 +405,6 @@
         tr.appendChild(agentCell);
         tr.appendChild(scoreCell);
         tr.appendChild(weightCell);
-        tr.appendChild(analysisCell);
         tr.appendChild(problemsCell);
         tr.appendChild(recommendationCell);
         

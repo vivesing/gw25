@@ -723,9 +723,9 @@ a:hover {
   background: linear-gradient(145deg, #2d3748, #1a202c);
   border-radius: 20px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-  max-width: 600px;
+  max-width: 700px;
   width: 90%;
-  max-height: 80vh;
+  max-height: 85vh;
   overflow-y: auto;
   z-index: 1001;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -804,6 +804,13 @@ a:hover {
   position: absolute;
   left: 0;
   top: 0;
+}
+
+.popup-section p {
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+  text-align: justify;
 }
 
 .popup-close {

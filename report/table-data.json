@@ -1,25 +1,6 @@
 {
   "tableData": [
     {
-      "id": "content_internal_reviews_analysis_agent",
-      "agentName": "Content Internal Reviews Analysis Agent",
-      "category": "Experience",
-      "description": "This agent analyzes internal reviews and user feedback to assess content quality and user satisfaction.",
-      "functions": [
-        "Analyzes user reviews and ratings",
-        "Evaluates content engagement metrics",
-        "Assesses user sentiment and feedback patterns",
-        "Measures content effectiveness and user satisfaction",
-        "Identifies areas for content improvement based on user feedback"
-      ],
-      "score": 0,
-      "scoreClass": "red",
-      "weight": "7%",
-      "analysis": "Slow page load speed and poor mobile responsiveness",
-      "problems": "Major navigation issues on mobile",
-      "recommendation": "Optimize page speed and mobile navigation"
-    },
-    {
       "id": "author_credit_analysis_agent",
       "agentName": "Author Credit Analysis Agent",
       "category": "Experience",
@@ -31,69 +12,12 @@
         "Measures author credibility and trustworthiness",
         "Identifies areas for author profile enhancement"
       ],
-      "score": 6,
-      "scoreClass": "yellow",
+      "score": 3,
+      "scoreClass": "red",
       "weight": "0%",
       "analysis": "Poor user engagement metrics and low time on site",
       "problems": "Very limited user-generated content",
       "recommendation": "Implement interactive features and user engagement tools"
-    },
-    {
-      "id": "sentiment_analysis_agent",
-      "agentName": "Sentiment Analysis Agent",
-      "category": "Experience",
-      "description": "This agent analyzes user sentiment and emotional responses to content to gauge user satisfaction and engagement.",
-      "functions": [
-        "Analyzes user sentiment patterns",
-        "Evaluates emotional responses to content",
-        "Assesses user satisfaction levels",
-        "Measures content emotional impact",
-        "Identifies sentiment improvement opportunities"
-      ],
-      "score": 6,
-      "scoreClass": "yellow",
-      "weight": "9%",
-      "analysis": "Poor user sentiment and engagement",
-      "problems": "Negative user sentiment detected",
-      "recommendation": "Improve user experience and address negative feedback"
-    },
-    {
-      "id": "engagement_credibility_agent",
-      "agentName": "Engagement Credibility Agent",
-      "category": "Experience",
-      "description": "This agent measures user engagement and interaction patterns to assess content effectiveness and user interest.",
-      "functions": [
-        "Analyzes user engagement metrics",
-        "Evaluates interaction patterns",
-        "Assesses content effectiveness",
-        "Measures user interest and participation",
-        "Identifies engagement improvement strategies"
-      ],
-      "score": 6,
-      "scoreClass": "yellow",
-      "weight": "4%",
-      "analysis": "Some mentions on authoritative industry sites",
-      "problems": "Limited brand mentions on authoritative sites",
-      "recommendation": "Increase PR and guest posting campaigns"
-    },
-    {
-      "id": "organisation_schema_analysis_agent",
-      "agentName": "Organisation Schema Analysis Agent",
-      "category": "Experience",
-      "description": "This agent analyzes organizational schema markup and structured data to assess content organization and discoverability.",
-      "functions": [
-        "Analyzes organizational schema markup",
-        "Evaluates structured data implementation",
-        "Assesses content organization patterns",
-        "Measures discoverability and SEO structure",
-        "Identifies schema optimization opportunities"
-      ],
-      "score": 7,
-      "scoreClass": "green",
-      "weight": "5%",
-      "analysis": "Good structured data and schema markup",
-      "problems": "Could enhance schema implementation",
-      "recommendation": "Improve schema markup implementation"
     },
     {
       "id": "authoritativeness_analysis_agent",
@@ -115,6 +39,63 @@
       "recommendation": "Continue building high-quality backlinks"
     },
     {
+      "id": "clarity_brevity_analysis_agent",
+      "agentName": "Clarity Brevity Analysis Agent",
+      "category": "Semantics",
+      "description": "This agent analyzes content clarity and brevity to assess readability and user comprehension.",
+      "functions": [
+        "Analyzes content clarity and readability",
+        "Evaluates content brevity and conciseness",
+        "Assesses user comprehension levels",
+        "Measures content accessibility",
+        "Identifies clarity improvement opportunities"
+      ],
+      "score": 3,
+      "scoreClass": "red",
+      "weight": "5%",
+      "analysis": "Basic heading structure but needs improvement",
+      "problems": "Inconsistent heading hierarchy",
+      "recommendation": "Implement proper H1-H6 heading structure"
+    },
+    {
+      "id": "content_consistency_analysis_agent",
+      "agentName": "Content Consistency Analysis Agent",
+      "category": "Trust",
+      "description": "This agent analyzes content consistency and reliability to assess trustworthiness and credibility.",
+      "functions": [
+        "Analyzes content consistency and reliability",
+        "Evaluates information accuracy and reliability",
+        "Assesses content trustworthiness",
+        "Measures content credibility signals",
+        "Identifies consistency improvement areas"
+      ],
+      "score": 6,
+      "scoreClass": "yellow",
+      "weight": "5%",
+      "analysis": "Basic security indicators and SSL certificate",
+      "problems": "Missing some trust signals",
+      "recommendation": "Add trust badges and security certifications"
+    },
+    {
+      "id": "content_cta_analysis_agent",
+      "agentName": "Content CTA Analysis Agent",
+      "category": "Semantics",
+      "description": "This agent evaluates call-to-action elements and conversion optimization in content.",
+      "functions": [
+        "Analyzes CTA placement and effectiveness",
+        "Evaluates conversion optimization strategies",
+        "Assesses user journey and conversion paths",
+        "Measures CTA performance and engagement",
+        "Identifies conversion improvement opportunities"
+      ],
+      "score": 7,
+      "scoreClass": "green",
+      "weight": "6%",
+      "analysis": "Moderate keyword relevance and optimization",
+      "problems": "Low keyword density and relevance",
+      "recommendation": "Optimize content for target keywords naturally"
+    },
+    {
       "id": "content_internal_press_coverage_agent",
       "agentName": "Content Internal Press Coverage Agent",
       "category": "Expertise",
@@ -126,12 +107,31 @@
         "Measures content authority in media",
         "Identifies press coverage opportunities"
       ],
-      "score": 8,
-      "scoreClass": "green",
+      "score": 3,
+      "scoreClass": "red",
       "weight": "2%",
       "analysis": "Author credentials are mentioned but not detailed",
       "problems": "Insufficient author bios and credentials",
       "recommendation": "Add comprehensive author profiles with credentials"
+    },
+    {
+      "id": "content_internal_reviews_analysis_agent",
+      "agentName": "Content Internal Reviews Analysis Agent",
+      "category": "Experience",
+      "description": "This agent analyzes internal reviews and user feedback to assess content quality and user satisfaction.",
+      "functions": [
+        "Analyzes user reviews and ratings",
+        "Evaluates content engagement metrics",
+        "Assesses user sentiment and feedback patterns",
+        "Measures content effectiveness and user satisfaction",
+        "Identifies areas for content improvement based on user feedback"
+      ],
+      "score": 7,
+      "scoreClass": "green",
+      "weight": "7%",
+      "analysis": "Slow page load speed and poor mobile responsiveness",
+      "problems": "Major navigation issues on mobile",
+      "recommendation": "Optimize page speed and mobile navigation"
     },
     {
       "id": "editoral_policy_analysis_agent",
@@ -151,6 +151,25 @@
       "analysis": "Content shows some expertise but lacks depth",
       "problems": "Thin content on key topics",
       "recommendation": "Expand content with detailed research and examples"
+    },
+    {
+      "id": "engagement_credibility_agent",
+      "agentName": "Engagement Credibility Agent",
+      "category": "Experience",
+      "description": "This agent measures user engagement and interaction patterns to assess content effectiveness and user interest.",
+      "functions": [
+        "Analyzes user engagement metrics",
+        "Evaluates interaction patterns",
+        "Assesses content effectiveness",
+        "Measures user interest and participation",
+        "Identifies engagement improvement strategies"
+      ],
+      "score": 8,
+      "scoreClass": "green",
+      "weight": "4%",
+      "analysis": "Some mentions on authoritative industry sites",
+      "problems": "Limited brand mentions on authoritative sites",
+      "recommendation": "Increase PR and guest posting campaigns"
     },
     {
       "id": "expertise_research_analysis_agent",
@@ -183,50 +202,31 @@
         "Measures content statistical rigor",
         "Identifies statistical improvement areas"
       ],
-      "score": 3,
-      "scoreClass": "red",
+      "score": 6,
+      "scoreClass": "yellow",
       "weight": "8%",
       "analysis": "Some statistical data present",
       "problems": "Limited statistical evidence and data",
       "recommendation": "Include more statistical data and evidence"
     },
     {
-      "id": "clarity_brevity_analysis_agent",
-      "agentName": "Clarity Brevity Analysis Agent",
-      "category": "Semantics",
-      "description": "This agent analyzes content clarity and brevity to assess readability and user comprehension.",
+      "id": "organisation_schema_analysis_agent",
+      "agentName": "Organisation Schema Analysis Agent",
+      "category": "Experience",
+      "description": "This agent analyzes organizational schema markup and structured data to assess content organization and discoverability.",
       "functions": [
-        "Analyzes content clarity and readability",
-        "Evaluates content brevity and conciseness",
-        "Assesses user comprehension levels",
-        "Measures content accessibility",
-        "Identifies clarity improvement opportunities"
-      ],
-      "score": 10,
-      "scoreClass": "green",
-      "weight": "5%",
-      "analysis": "Basic heading structure but needs improvement",
-      "problems": "Inconsistent heading hierarchy",
-      "recommendation": "Implement proper H1-H6 heading structure"
-    },
-    {
-      "id": "content_cta_analysis_agent",
-      "agentName": "Content CTA Analysis Agent",
-      "category": "Semantics",
-      "description": "This agent evaluates call-to-action elements and conversion optimization in content.",
-      "functions": [
-        "Analyzes CTA placement and effectiveness",
-        "Evaluates conversion optimization strategies",
-        "Assesses user journey and conversion paths",
-        "Measures CTA performance and engagement",
-        "Identifies conversion improvement opportunities"
+        "Analyzes organizational schema markup",
+        "Evaluates structured data implementation",
+        "Assesses content organization patterns",
+        "Measures discoverability and SEO structure",
+        "Identifies schema optimization opportunities"
       ],
       "score": 7,
       "scoreClass": "green",
-      "weight": "6%",
-      "analysis": "Moderate keyword relevance and optimization",
-      "problems": "Low keyword density and relevance",
-      "recommendation": "Optimize content for target keywords naturally"
+      "weight": "5%",
+      "analysis": "Good structured data and schema markup",
+      "problems": "Could enhance schema implementation",
+      "recommendation": "Improve schema markup implementation"
     },
     {
       "id": "semantic_fitness_conversational_agent",
@@ -240,8 +240,8 @@
         "Measures content accessibility and clarity",
         "Identifies conversational improvement areas"
       ],
-      "score": 7,
-      "scoreClass": "green",
+      "score": 6,
+      "scoreClass": "yellow",
       "weight": "0%",
       "analysis": "Basic meta descriptions present",
       "problems": "Poor meta description quality",
@@ -259,8 +259,8 @@
         "Measures FAQ comprehensiveness",
         "Identifies FAQ improvement opportunities"
       ],
-      "score": 6,
-      "scoreClass": "yellow",
+      "score": 7,
+      "scoreClass": "green",
       "weight": "2.5%",
       "analysis": "Basic FAQ structure present",
       "problems": "Limited FAQ coverage and depth",
@@ -286,42 +286,23 @@
       "recommendation": "Improve user journey and conversion paths"
     },
     {
-      "id": "uniquieness_analysis_agent",
-      "agentName": "Uniqueness Analysis Agent",
-      "category": "Semantics",
-      "description": "This agent evaluates content uniqueness and originality to assess competitive differentiation.",
+      "id": "sentiment_analysis_agent",
+      "agentName": "Sentiment Analysis Agent",
+      "category": "Experience",
+      "description": "This agent analyzes user sentiment and emotional responses to content to gauge user satisfaction and engagement.",
       "functions": [
-        "Analyzes content uniqueness and originality",
-        "Evaluates competitive differentiation",
-        "Assesses unique value proposition",
-        "Measures content distinctiveness",
-        "Identifies uniqueness improvement opportunities"
+        "Analyzes user sentiment patterns",
+        "Evaluates emotional responses to content",
+        "Assesses user satisfaction levels",
+        "Measures content emotional impact",
+        "Identifies sentiment improvement opportunities"
       ],
-      "score": 5,
+      "score": 6,
       "scoreClass": "yellow",
       "weight": "9%",
-      "analysis": "Some unique content elements",
-      "problems": "Limited unique value proposition",
-      "recommendation": "Enhance unique content and value proposition"
-    },
-    {
-      "id": "content_consistency_analysis_agent",
-      "agentName": "Content Consistency Analysis Agent",
-      "category": "Trust",
-      "description": "This agent analyzes content consistency and reliability to assess trustworthiness and credibility.",
-      "functions": [
-        "Analyzes content consistency and reliability",
-        "Evaluates information accuracy and reliability",
-        "Assesses content trustworthiness",
-        "Measures content credibility signals",
-        "Identifies consistency improvement areas"
-      ],
-      "score": 3,
-      "scoreClass": "red",
-      "weight": "5%",
-      "analysis": "Basic security indicators and SSL certificate",
-      "problems": "Missing some trust signals",
-      "recommendation": "Add trust badges and security certifications"
+      "analysis": "Poor user sentiment and engagement",
+      "problems": "Negative user sentiment detected",
+      "recommendation": "Improve user experience and address negative feedback"
     },
     {
       "id": "trust_company_registration_analysis_agent",
@@ -335,8 +316,8 @@
         "Measures business credibility signals",
         "Identifies compliance improvement areas"
       ],
-      "score": 7,
-      "scoreClass": "green",
+      "score": 5,
+      "scoreClass": "yellow",
       "weight": "1%",
       "analysis": "Basic privacy policy and terms of service",
       "problems": "Privacy policy needs enhancement",
@@ -354,8 +335,8 @@
         "Measures business openness signals",
         "Identifies transparency improvement areas"
       ],
-      "score": 3,
-      "scoreClass": "red",
+      "score": 9,
+      "scoreClass": "green",
       "weight": "5%",
       "analysis": "Limited user reviews and testimonials",
       "problems": "Very few recent reviews",
@@ -392,7 +373,7 @@
         "Measures information trust signals",
         "Identifies update frequency improvement areas"
       ],
-      "score": 9,
+      "score": 10,
       "scoreClass": "green",
       "weight": "7%",
       "analysis": "Content freshness indicators present",
@@ -417,6 +398,25 @@
       "analysis": "Basic policy page structure",
       "problems": "Limited policy page coverage",
       "recommendation": "Enhance policy pages and legal information"
+    },
+    {
+      "id": "uniquieness_analysis_agent",
+      "agentName": "Uniqueness Analysis Agent",
+      "category": "Semantics",
+      "description": "This agent evaluates content uniqueness and originality to assess competitive differentiation.",
+      "functions": [
+        "Analyzes content uniqueness and originality",
+        "Evaluates competitive differentiation",
+        "Assesses unique value proposition",
+        "Measures content distinctiveness",
+        "Identifies uniqueness improvement opportunities"
+      ],
+      "score": 5,
+      "scoreClass": "yellow",
+      "weight": "9%",
+      "analysis": "Some unique content elements",
+      "problems": "Limited unique value proposition",
+      "recommendation": "Enhance unique content and value proposition"
     }
   ]
 } 
