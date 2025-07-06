@@ -584,7 +584,6 @@ a:hover {
 .page-analyzed-img-container {
   position: relative;
   width: 100%;
-  max-width: 700px;
   margin: 0 auto;
 }
 .page-analyzed-img {
@@ -625,7 +624,7 @@ a:hover {
 }
 @media (max-width: 700px) {
   .page-analyzed-img-container {
-    max-width: 100%;
+    width: 100%;
   }
   .page-analyzed-details {
     position: static;
