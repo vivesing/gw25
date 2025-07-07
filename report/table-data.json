@@ -14,9 +14,9 @@
       "score": 3,
       "scoreClass": "red",
       "weight": "0%",
-      "analysis": "Poor user engagement metrics and low time on site",
-      "problems": "Very limited user-generated content",
-      "recommendation": "Implement interactive features and user engagement tools"
+      "analysis": "Page lacks a clear by_line, attributing authorship to a named expert. | Mentionsnutritionists &Performance Advisory Board but without names or links. | No verifiable credentials (LinkedIn, bios, external profiles). | Certifications (Informed Choice/Protein) relate to product, not authorship.",
+      "problems": "Lack of a clear byline attributing the content to a specific author or expert. | Absence of demonstrated expertise or credentials for the individuals mentioned (e.g., Performance Advisory Board). | No verifiable author information such as professional profiles or external credentials.",
+      "recommendation": "Include a clear byline with author name, expertise, and role. | Link Board members to profiles or cite credentials explicitly. | Add Person/Organization schema to mark up authorship metadata."
     },
     {
       "id": "authoritativeness_analysis_agent",
@@ -32,9 +32,9 @@
       "score": 8,
       "scoreClass": "green",
       "weight": "7%",
-      "analysis": "Good backlinks from reputable sources",
-      "problems": "Could improve backlink quality",
-      "recommendation": "Continue building high-quality backlinks"
+      "analysis": "Strong backlinks from Mens Health, Comparably, etc., raise domain authority. | Awards & eco-initiatives bolster credibility. | Authorship by in_house nutritionists & Advisory Board noted & certified by Informed Choice. | Review_platform scores (Trustpilot/Comparably_3.64.5/5) signal room to grow trust.",
+      "problems": "Authoritativeness score is relatively low at 6. | Recognition & citation scores only 7.",
+      "recommendation": "Improve customer trust & satisfaction to influence review scores. | Publicise awards & achievements more widely.| Diversify and strengthen citation sources."
     },
     {
       "id": "clarity_brevity_analysis_agent",
@@ -50,9 +50,9 @@
       "score": 3,
       "scoreClass": "red",
       "weight": "5%",
-      "analysis": "Basic heading structure but needs improvement",
-      "problems": "Inconsistent heading hierarchy",
-      "recommendation": "Implement proper H1-H6 heading structure"
+      "analysis": "Nutritional details delivered as dense blocks; hard to scan. | Overly verbose, repetitive marketing copy. | Lacks logical flow & clear categories for quick parsing.",
+      "problems": "Lack of formatted headings and sub_headings. | Overuse of verbose/repetitive language. | Missing logical structure or categorisation.",
+      "recommendation": "Use bullet lists for nutrition facts."
     },
     {
       "id": "content_consistency_analysis_agent",
@@ -68,9 +68,9 @@
       "score": 6,
       "scoreClass": "yellow",
       "weight": "5%",
-      "analysis": "Basic security indicators and SSL certificate",
-      "problems": "Missing some trust signals",
-      "recommendation": "Add trust badges and security certifications"
+      "analysis": "Consistent messaging on high protein & certifications across page. | Redundant discount/benefit text clutters layout.",
+      "problems": "Repetition & redundancy in copy. | Encoding/formatting errors. | Scattered details reduce clarity.",
+      "recommendation": "Remove redundant sections to declutter. | Fix encoding issues. | Balance promos with concise product focus."
     },
     {
       "id": "content_cta_analysis_agent",
@@ -86,9 +86,9 @@
       "score": 7,
       "scoreClass": "green",
       "weight": "6%",
-      "analysis": "Moderate keyword relevance and optimization",
-      "problems": "Low keyword density and relevance",
-      "recommendation": "Optimize content for target keywords naturally"
+      "analysis": "Provides clear, practical usage recommendations. | Highlights holistic approach & safety. | Strong CTAs drive engagement and purchase.",
+      "problems": "",
+      "recommendation": ""
     },
     {
       "id": "content_internal_press_coverage_agent",
@@ -104,9 +104,9 @@
       "score": 3,
       "scoreClass": "red",
       "weight": "2%",
-      "analysis": "Author credentials are mentioned but not detailed",
-      "problems": "Insufficient author bios and credentials",
-      "recommendation": "Add comprehensive author profiles with credentials"
+      "analysis": "No dedicatedIn_the_Press or press_release hub.| MissingAs_Featured_In logos or media links. | Certifications mentioned but dont establish media presence.",
+      "problems": "Lack of a dedicated press section. | Absence of media logos/links. | Limited collaboration with reputable publications.",
+      "recommendation": "Create press/news page to showcase coverage. | Add clickableFeatured_In logos. | Pursue & display reputable media collaborations."
     },
     {
       "id": "content_internal_reviews_analysis_agent",
@@ -122,9 +122,9 @@
       "score": 7,
       "scoreClass": "green",
       "weight": "7%",
-      "analysis": "Slow page load speed and poor mobile responsiveness",
-      "problems": "Major navigation issues on mobile",
-      "recommendation": "Optimize page speed and mobile navigation"
+      "analysis": "Aggregate rating 4.36/5 (4,015 reviews) shows positive sentiment. | No personal success stories or detailed case studies. | Popularity claimTrusted by 2.4 million unaccompanied by individual experiences.",
+      "problems": "Absence of personal success stories or detailed case studies.| Lack of specific recommendations or detailed testimonials.",
+      "recommendation": ""
     },
     {
       "id": "editoral_policy_analysis_agent",
@@ -140,9 +140,9 @@
       "score": 0,
       "scoreClass": "red",
       "weight": "0%",
-      "analysis": "Content shows some expertise but lacks depth",
-      "problems": "Thin content on key topics",
-      "recommendation": "Expand content with detailed research and examples"
+      "analysis": "Certifications cited but disclaimers absent on product pages. | No visibility into Advisory Board review process.",
+      "problems": "Missing disclaimers on certifications/testing. | No info on how content is reviewed.",
+      "recommendation": "Add visible certification disclaimers. | Explain Advisory Boards role in content review."
     },
     {
       "id": "engagement_credibility_agent",
@@ -158,9 +158,9 @@
       "score": 8,
       "scoreClass": "green",
       "weight": "4%",
-      "analysis": "Some mentions on authoritative industry sites",
-      "problems": "Limited brand mentions on authoritative sites",
-      "recommendation": "Increase PR and guest posting campaigns"
+      "analysis": "Product wins major awards (e.g., Circular Economy Transition of the Year, 2021 A.A. Nutrition Taste Awards). | Informed Choice certification underscores quality. | Mentioned in sports_nutrition blogs/reviews; little presence on non_commercial platforms (Reddit, Quora). | Overall moderate credibility from awards + limited press variety.",
+      "problems": "",
+      "recommendation": ""
     },
     {
       "id": "expertise_research_analysis_agent",
@@ -176,9 +176,9 @@
       "score": 6,
       "scoreClass": "yellow",
       "weight": "3%",
-      "analysis": "Basic research depth but needs improvement",
-      "problems": "Limited research citations and sources",
-      "recommendation": "Add more comprehensive research and citations"
+      "analysis": "Shows moderate sports_nutrition expertise; details product benefits/certifications. | Content largely duplicates other MyProtein pages (originality issue). | Lacks external research citations to back nutritional claims.",
+      "problems": "Content overlap reduces originality. | No authoritative external citations. | Certifications referenced without supporting data.",
+      "recommendation": "Cite third_party studies or papers. | Differentiate copy from other SKUs. | Add stats/trial results to boost credibility."
     },
     {
       "id": "expertise_stats_analysis_agent",
@@ -194,9 +194,9 @@
       "score": 6,
       "scoreClass": "yellow",
       "weight": "8%",
-      "analysis": "Some statistical data present",
-      "problems": "Limited statistical evidence and data",
-      "recommendation": "Include more statistical data and evidence"
+      "analysis": "Provides quantitative stats (nutrition, customer reach) but without external sources. | No links for certifications/data. | Pricing lacks market context or comparisons.",
+      "problems": "No external citations for stats. | Missing links to certifyInformed Choice. | No contextual pricing analysis.",
+      "recommendation": "Link to studies, data sources, certifications. | Include market_price comparisons. | Disclose methodology for customer stats."
     },
     {
       "id": "organisation_schema_analysis_agent",
@@ -212,9 +212,9 @@
       "score": 7,
       "scoreClass": "green",
       "weight": "5%",
-      "analysis": "Good structured data and schema markup",
-      "problems": "Could enhance schema implementation",
-      "recommendation": "Improve schema markup implementation"
+      "analysis": "Product JSON_LD schema fully implemented & valid. | Includes all key Product properties plus reviews & ratings. | Uses @id linking for entity consistency.",
+      "problems": "",
+      "recommendation": ""
     },
     {
       "id": "semantic_fitness_conversational_agent",
@@ -230,9 +230,9 @@
       "score": 6,
       "scoreClass": "yellow",
       "weight": "0%",
-      "analysis": "Basic meta descriptions present",
-      "problems": "Poor meta description quality",
-      "recommendation": "Write compelling, keyword-rich meta descriptions"
+      "analysis": "Sections like Description & FAQ exist, but overall layout cluttered. | Repetitive promos overshadow critical info. | Dense copy may alienate readers. | Nutrition facts lack layman_friendly explanations.",
+      "problems": "Cluttered, hard_to_navigate structure. | Excessive, repetitive promos. | Dense description. | Nutrition info not explained for lay readers.",
+      "recommendation": "Simplify layout & cut duplicate content. | Highlight key info with concise bullets. | Extend conversational tone site_wide. | Add plain_language nutrition explainers."
     },
     {
       "id": "semantic_fitness_faq_agent",
@@ -248,9 +248,9 @@
       "score": 7,
       "scoreClass": "green",
       "weight": "2.5%",
-      "analysis": "Basic FAQ structure present",
-      "problems": "Limited FAQ coverage and depth",
-      "recommendation": "Expand FAQ section with comprehensive answers"
+      "analysis": "FAQ answers packaging changes, certification, benefits, usage. | Suggested_use guidance offers practical instructions. | No directGet Help support links. | Lacks deep tutorials (recipes, fitness integration) & broader educational resources.",
+      "problems": "MissingGet_Help section with support links. | No recipe/fitness tutorials. | No comprehensive educational resources.",
+      "recommendation": ""
     },
     {
       "id": "semantic_fitness_granular_journey_agent",
@@ -266,9 +266,9 @@
       "score": 5,
       "scoreClass": "yellow",
       "weight": "6%",
-      "analysis": "Basic user journey optimization",
-      "problems": "Limited journey mapping and optimization",
-      "recommendation": "Improve user journey and conversion paths"
+      "analysis": "Covers user journey: benefits, certification, suggested use for decision & post_purchase stages. | Lacks creative how_to guides (recipes, diverse uses). | Minimal post_purchase engagement beyond basic mixing instructions.",
+      "problems": "Lack of creative how_to guides. | Limited post_purchase engagement content.",
+      "recommendation": "Add protein_rich recipe guides. | Provide workout_timing intake guides & user tips."
     },
     {
       "id": "sentiment_analysis_agent",
@@ -284,9 +284,9 @@
       "score": 6,
       "scoreClass": "yellow",
       "weight": "9%",
-      "analysis": "Poor user sentiment and engagement",
-      "problems": "Negative user sentiment detected",
-      "recommendation": "Improve user experience and address negative feedback"
+      "analysis": "Mixed sentiment online: affordability praised; flavor & digestive issues flagged. | Active on Reddit, Quora; limited YouTube/Instagram presence. | Positive cost_quality ratio balanced by taste concerns links to moderate overall score.",
+      "problems": "Flavor inconsistency concerns. | Digestive_issue reports. | Limited YouTube/IG visibility. | Negative sentiment on some forums.",
+      "recommendation": "Encourage influencer video reviews. | Address negatives on Reddit/Quora. | Run IG/TikTok engagement campaigns. | Improve flavor consistency & formulation."
     },
     {
       "id": "trust_company_registration_analysis_agent",
@@ -302,9 +302,9 @@
       "score": 5,
       "scoreClass": "yellow",
       "weight": "1%",
-      "analysis": "Basic privacy policy and terms of service",
-      "problems": "Privacy policy needs enhancement",
-      "recommendation": "Enhance privacy policy with more details"
+      "analysis": "Product page omits company legal & registration details. | Parent entity (THG Nutrition) not referenced on page. | Greater transparency would increase trust.",
+      "problems": "No company registration info. | Certifications not paired with business info.",
+      "recommendation": "Add company name, number, jurisdiction in the footer. | Create legal_information page. | Show certifications alongside legal details."
     },
     {
       "id": "trust_contact_info_analysis_agent",
@@ -320,9 +320,9 @@
       "score": 9,
       "scoreClass": "green",
       "weight": "5%",
-      "analysis": "Limited user reviews and testimonials",
-      "problems": "Very few recent reviews",
-      "recommendation": "Encourage more customer reviews"
+      "analysis": "Contact page lists toll_free phone, email, physical address, message centre. | Info current & comprehensive. | Main product page lacks quick access to contact link.",
+      "problems": "",
+      "recommendation": ""
     },
     {
       "id": "trust_ecommerce_policy_analysis_agent",
@@ -338,9 +338,9 @@
       "score": 9,
       "scoreClass": "green",
       "weight": "6%",
-      "analysis": "Basic ecommerce trust signals",
-      "problems": "Limited ecommerce security indicators",
-      "recommendation": "Add ecommerce security badges and policies"
+      "analysis": "Returns policy (28_day window, photo proof, refund/replace terms) and delivery info (36 days, free shipping>_5000, tracking) clear & accessible. | Links reside in customer_service section; could be more visible on product pages.",
+      "problems": "",
+      "recommendation": ""
     },
     {
       "id": "trust_last_updated_analysis_agent",
@@ -356,9 +356,9 @@
       "score": 10,
       "scoreClass": "green",
       "weight": "7%",
-      "analysis": "Content freshness indicators present",
-      "problems": "Limited content update frequency",
-      "recommendation": "Update content more frequently"
+      "analysis": "rate_limit_exceeded error disrupts platform usability. | No advance warning before hitting the limit. | Users lack retry_time guidance; no tiered flexibility.",
+      "problems": "Rate_limit interruptions. | No real_time warnings. | Insufficient retry/usage guidance.",
+      "recommendation": "Warn users when near limit. | Publish detailed rate_limit docs. | Offer flexible limits for user tiers."
     },
     {
       "id": "trust_policy_pages_analysis_agent",
@@ -374,9 +374,9 @@
       "score": 3,
       "scoreClass": "red",
       "weight": "2.5%",
-      "analysis": "Basic policy page structure",
-      "problems": "Limited policy page coverage",
-      "recommendation": "Enhance policy pages and legal information"
+      "analysis": "Privacy Policy & Terms/Conditions clear and linked in footer. | No dedicated Cookie Policy. | Lacks copyright notice & formal complaints procedure.",
+      "problems": "Missing Cookie Policy. | No copyright notice. | No formal complaints process.",
+      "recommendation": "Publish Cookie Policy for transparency. | Add copyright statement. | Provide complaints procedure for issue resolution."
     },
     {
       "id": "uniquieness_analysis_agent",
@@ -392,9 +392,9 @@
       "score": 5,
       "scoreClass": "yellow",
       "weight": "9%",
-      "analysis": "Some unique content elements",
-      "problems": "Limited unique value proposition",
-      "recommendation": "Enhance unique content and value proposition"
+      "analysis": "Uses only generic product images; no unique media illustrating real_world use. | Claims likeTrusted by 2.4 million & Informed Choice certification lack external validation. | Few first_person testimonials or unique insights.",
+      "problems": "Lack of unique media showing real use. | No external validation for big claims. | Limited relatable testimonials.",
+      "recommendation": "Add real_life photos/videos. | Cite external proof for trust claims. | Include customer stories or quotes."
     }
   ]
 } 

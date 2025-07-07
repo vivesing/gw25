@@ -396,10 +396,42 @@
         weightCell.textContent = row.weight;
         
         const problemsCell = document.createElement('td');
-        problemsCell.textContent = row.problems;
+        if (row.problems && row.problems.trim() !== '') {
+          const problemsList = row.problems.split('|').map(item => item.trim()).filter(item => item);
+          if (problemsList.length > 0) {
+            const ul = document.createElement('ul');
+            ul.className = 'cell-bullet-list';
+            problemsList.forEach(problem => {
+              const li = document.createElement('li');
+              li.textContent = problem;
+              ul.appendChild(li);
+            });
+            problemsCell.appendChild(ul);
+          } else {
+            problemsCell.textContent = '';
+          }
+        } else {
+          problemsCell.textContent = '';
+        }
         
         const recommendationCell = document.createElement('td');
-        recommendationCell.textContent = row.recommendation;
+        if (row.recommendation && row.recommendation.trim() !== '') {
+          const recommendationList = row.recommendation.split('|').map(item => item.trim()).filter(item => item);
+          if (recommendationList.length > 0) {
+            const ul = document.createElement('ul');
+            ul.className = 'cell-bullet-list';
+            recommendationList.forEach(recommendation => {
+              const li = document.createElement('li');
+              li.textContent = recommendation;
+              ul.appendChild(li);
+            });
+            recommendationCell.appendChild(ul);
+          } else {
+            recommendationCell.textContent = '';
+          }
+        } else {
+          recommendationCell.textContent = '';
+        }
         
         // Append all cells to the row
         tr.appendChild(agentCell);

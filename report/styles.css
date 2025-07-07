@@ -884,4 +884,34 @@ a:hover {
   color: #a0aec0;
   font-size: 0.9rem;
   font-weight: 500;
+}
+
+/* Cell Bullet List Styles */
+.cell-bullet-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cell-bullet-list li {
+  position: relative;
+  padding: 4px 0 4px 16px;
+  color: #cbd5e1;
+  line-height: 1.4;
+  font-size: 0.85rem;
+  margin-bottom: 2px;
+}
+
+.cell-bullet-list li::before {
+  content: '•';
+  color: #667eea;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  font-size: 0.9rem;
+}
+
+.cell-bullet-list li:last-child {
+  margin-bottom: 0;
 } 
