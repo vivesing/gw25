@@ -181,6 +181,7 @@
       <h3 id="popup-title" class="popup-title"></h3>
       <p id="popup-subtitle" class="popup-subtitle"></p>
       <div class="popup-scores">
+        <span id="popup-category" class="popup-category-badge"></span>
         <span id="popup-score" class="popup-score-badge"></span>
         <span id="popup-weight" class="popup-weight"></span>
       </div>
@@ -313,10 +314,12 @@
       // Populate score and weight
       const scoreElement = document.getElementById('popup-score');
       const weightElement = document.getElementById('popup-weight');
+      const categoryElement = document.getElementById('popup-category');
       
       scoreElement.textContent = score;
       scoreElement.className = `popup-score-badge ${getScoreClass(score, weight)}`;
       weightElement.textContent = `Weight: ${weight}`;
+      categoryElement.textContent = category;
       
       // Populate analysis
       document.getElementById('popup-analysis').textContent = analysis;

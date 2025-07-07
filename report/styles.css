@@ -886,6 +886,19 @@ a:hover {
   font-weight: 500;
 }
 
+.popup-category-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  background: rgba(127, 156, 245, 0.2);
+  color: #7f9cf5;
+  border: 1px solid rgba(127, 156, 245, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
 /* Cell Bullet List Styles */
 .cell-bullet-list {
   list-style: none;
