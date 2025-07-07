@@ -39,7 +39,7 @@
     {
       "id": "clarity_brevity_analysis_agent",
       "agentName": "Clarity Brevity Analysis Agent",
-      "category": "Semantics",
+      "category": "Semantic Alignment",
       "description": "This agent analyzes content clarity and brevity to assess readability and user comprehension.",
       "functions": [
         "Analyzes content clarity and scannability",
@@ -57,7 +57,7 @@
     {
       "id": "content_consistency_analysis_agent",
       "agentName": "Content Consistency Analysis Agent",
-      "category": "Trust",
+      "category": "Trustworthiness",
       "description": "This agent analyzes content consistency and reliability to assess trustworthiness and credibility.",
       "functions": [
         "Analyzes content consistency and reliability",
@@ -75,7 +75,7 @@
     {
       "id": "content_cta_analysis_agent",
       "agentName": "Content CTA Analysis Agent",
-      "category": "Semantics",
+      "category": "Semantic Alignment",
       "description": "This agent evaluates call-to-action elements and conversion optimization in content.",
       "functions": [
         "Analyzes CTA placement and effectiveness",
@@ -147,7 +147,7 @@
     {
       "id": "engagement_credibility_agent",
       "agentName": "Engagement Credibility Agent",
-      "category": "Experience",
+      "category": "Authoritativeness",
       "description": "This agent measures user engagement and interaction patterns to assess content effectiveness and user interest.",
       "functions": [
         "Analyzes user engagement metrics",
@@ -201,7 +201,7 @@
     {
       "id": "organisation_schema_analysis_agent",
       "agentName": "Organisation Schema Analysis Agent",
-      "category": "Experience",
+      "category": "Authoritativeness",
       "description": "This agent analyzes organizational schema markup and structured data to assess content organization and discoverability.",
       "functions": [
         "Analyzes organizational schema markup",
@@ -219,7 +219,7 @@
     {
       "id": "semantic_fitness_conversational_agent",
       "agentName": "Semantic Fitness Conversational Agent",
-      "category": "Semantics",
+      "category": "Semantic Alignment",
       "description": "This agent analyzes conversational tone and natural language patterns in content.",
       "functions": [
         "Analyzes conversational tone and style",
@@ -237,7 +237,7 @@
     {
       "id": "semantic_fitness_faq_agent",
       "agentName": "Semantic Fitness FAQ Agent",
-      "category": "Semantics",
+      "category": "Semantic Alignment",
       "description": "This agent evaluates FAQ structure and content to assess user information accessibility.",
       "functions": [
         "Analyzes FAQ structure and organization",
@@ -255,7 +255,7 @@
     {
       "id": "semantic_fitness_granular_journey_agent",
       "agentName": "Semantic Fitness Granular Journey Agent",
-      "category": "Semantics",
+      "category": "Semantic Alignment",
       "description": "This agent analyzes user journey optimization and conversion path analysis.",
       "functions": [
         "Analyzes user journey optimization",
@@ -291,7 +291,7 @@
     {
       "id": "trust_company_registration_analysis_agent",
       "agentName": "Trust Company Registration Analysis Agent",
-      "category": "Trust",
+      "category": "Trustworthiness",
       "description": "This agent evaluates company registration and legal compliance to assess business trustworthiness.",
       "functions": [
         "Analyzes company registration and legal status",
@@ -309,7 +309,7 @@
     {
       "id": "trust_contact_info_analysis_agent",
       "agentName": "Trust Contact Info Analysis Agent",
-      "category": "Trust",
+      "category": "Trustworthiness",
       "description": "This agent analyzes contact information and accessibility to assess business transparency and trust.",
       "functions": [
         "Analyzes contact information availability",
@@ -327,7 +327,7 @@
     {
       "id": "trust_ecommerce_policy_analysis_agent",
       "agentName": "Trust Ecommerce Policy Analysis Agent",
-      "category": "Trust",
+      "category": "Trustworthiness",
       "description": "This agent evaluates ecommerce policies and security measures to assess online business trustworthiness.",
       "functions": [
         "Analyzes ecommerce security policies",
@@ -345,7 +345,7 @@
     {
       "id": "trust_last_updated_analysis_agent",
       "agentName": "Trust Last Updated Analysis Agent",
-      "category": "Trust",
+      "category": "Trustworthiness",
       "description": "This agent analyzes content freshness and update frequency to assess information reliability and trustworthiness.",
       "functions": [
         "Analyzes content freshness and update frequency",
@@ -363,7 +363,7 @@
     {
       "id": "trust_policy_pages_analysis_agent",
       "agentName": "Trust Policy Pages Analysis Agent",
-      "category": "Trust",
+      "category": "Trustworthiness",
       "description": "This agent evaluates policy pages and legal information to assess business transparency and compliance.",
       "functions": [
         "Analyzes policy page completeness and clarity",
@@ -381,7 +381,7 @@
     {
       "id": "uniquieness_analysis_agent",
       "agentName": "Uniqueness Analysis Agent",
-      "category": "Semantics",
+      "category": "Semantic Alignment",
       "description": "This agent evaluates content uniqueness and originality to assess competitive differentiation.",
       "functions": [
         "Analyzes content uniqueness and originality",
