@@ -356,9 +356,9 @@
       "score": 3,
       "scoreClass": "red",
       "weight": "7%",
-      "analysis": "rate_limit_exceeded error disrupts platform usability. | No advance warning before hitting the limit. | Users lack retry_time guidance; no tiered flexibility.",
-      "problems": "Rate_limit interruptions. | No real_time warnings. | Insufficient retry/usage guidance.",
-      "recommendation": "Warn users when near limit. | Publish detailed rate_limit docs. | Offer flexible limits for user tiers."
+      "analysis": "last updated is not present in the html meta tag | last updated is not present in the json-ld schema | last updated infered from latest review added by customers",
+      "problems": "last updated is not visible on the page | last updated is not present in response headers | last updated is not present in the html meta tag | last updated is not present in the json-ld schema",
+      "recommendation": "Last updated should be visible on the page | Last updated should be present in response headers | Last updated should be present in the html meta tag | Last updated should be present in the json-ld schema"
     },
     {
       "id": "trust_policy_pages_analysis_agent",
