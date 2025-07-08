@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EEATS+ Quality Report</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <header style="position:relative; overflow:hidden;">
+    <div class="container header-bg-container">
+      <div class="header-bg-image"></div>
+      <h1>GEO Beacon</h1>
+      <div class="header-subheading">EEATS+ Score Quality Report</div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="report-meta">
+      <div class="meta-item">
+        <span class="meta-label">Report Generated:</span>
+        <span class="meta-value" id="report-date"></span>
+      </div>
+    </div>
+
+    <h2>Page Analyzed</h2>
+    <div class="page-analyzed-flex">
+      <div class="page-analyzed-img-container">
+        <img src="https://main--gw25--vivesing.aem.live/media_1056180ae7ee979732fa2e61d9821560b858bdb72.png?width=2000&format=webply&optimize=medium" alt="Page Analyzed Visual" class="page-analyzed-img" />
+        <div class="page-analyzed-details">
+          <p><strong>URL:</strong> <a href="https://www.bulk.com/uk/products/pure-whey-protein/bpb-wpc8-0000" target="_blank">https://www.bulk.com/uk/products/pure-whey-protein/bpb-wpc8-0000</a></p>
+          <p><strong>Organic Traffic:</strong> 1.6K/month</p>
+          <p><strong>Domain Authority:</strong> 64</p>
+          <p><strong>Page Authority:</strong> 11</p>
+          <p><strong>Brand's AI Citations (Daily):</strong> Google AIO: 1.3K, Perplexity: 270, ChatGPT: 292</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>Scores</h2>
+    <div class="scores-flex">
+      <div class="combined-score-section">
+        <div id="combined-score-pie" class="combined-score-pie">
+          <svg width="160" height="160" viewBox="0 0 160 160">
+            <!-- Pie segments will be injected by JS -->
+            <g id="pie-segments"></g>
+            <circle cx="80" cy="80" r="56" fill="#1a202c"/>
+            <text id="pie-center-score" x="80" y="90" text-anchor="middle" font-size="38" font-weight="bold" fill="#ed8936">62</text>
+            <text id="pie-center-label" x="80" y="115" text-anchor="middle" font-size="15" fill="#a0aec0">Combined</text>
+          </svg>
+        </div>
+        <div class="combined-score-label">Combined Performance</div>
+        <div class="combined-score-breakdown">
+          <div class="breakdown-title">Weight Breakdown PDP Pages</div>
+          <ul>
+            <li><span>Semantics</span> <span>29%</span></li>
+            <li><span>Trust</span> <span>27%</span></li>
+            <li><span>Authoritativeness</span> <span>16%</span></li>
+            <li><span>Experience</span> <span>16%</span></li>
+            <li><span>Expertise</span> <span>13%</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="score-grid">
+        <div class="score-card">
+          <div class="score-ring red">64</div>
+          <div>Experience</div>
+        </div>
+        <div class="score-card">
+          <div class="score-ring yellow">51</div>
+          <div>Expertise</div>
+        </div>
+        <div class="score-card">
+          <div class="score-ring green">77</div>
+          <div>Authoritativeness</div>
+        </div>
+        <div class="score-card">
+          <div class="score-ring yellow">67</div>
+          <div>Trust</div>
+        </div>
+        <div class="score-card">
+          <div class="score-ring yellow">52</div>
+          <div>Semantics Score</div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Problems Identified (Low Scoring Factors)</h2>
+    <details>
+      <summary>Experience <span style="color: #facc15; font-weight: 600;">(64)</span></summary>
+      <ul>
+        <li>Absence of personal success stories or detailed case studies</li>
+        <li>Limited user-generated content and interactions</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Expertise <span style="color: #ed8936; font-weight: 600;">(51)</span></summary>
+      <ul>
+        <li>Content overlap reduces originality and lacks external research citations</li>
+        <li>Missing disclaimers on certifications/testing</li>
+        <li>No authoritative external citations to back nutritional claims</li>
+      </ul>
+    </details>
+    <details open>
+      <summary>Semantic Alignment <span style="color: #ed8936; font-weight: 600;">(52)</span></summary>
+      <ul>
+        <li>Missing FAQ section to answer common questions</li>
+        <li>Cluttered, hard-to-navigate structure with excessive repetitive promos</li>
+        <li>Lack of formatted headings and sub-headings</li>
+        <li>Nutrition info not explained for lay readers</li>
+      </ul>
+    </details>
+
+    <h2>Suggestions / Recommendations</h2>
+    <details>
+      <summary>For Experience <span style="color: #facc15; font-weight: 600;">(64)</span></summary>
+      <ul>
+        <li>Add customer success stories and detailed case studies showcasing real user transformations, before-and-after results, and testimonials from verified customers who have achieved their fitness and nutrition goals through the product</li>
+        <li>Add Person/Organization schema to mark up authorship metadata</li>
+      </ul>
+    </details>
+    <details>
+      <summary>For Expertise <span style="color: #ed8936; font-weight: 600;">(51)</span></summary>
+      <ul>
+        <li>Cite third-party studies or papers to back nutritional claims</li>
+        <li>Add visible certification disclaimers</li>
+        <li>Differentiate copy from other SKUs to reduce content overlap</li>
+      </ul>
+    </details>
+
+
+    <details>
+      <summary>For Trustworthiness <span style="color: #facc15; font-weight: 600;">(67)</span></summary>
+      <ul>
+        <li>Add company name, number, jurisdiction in the footer</li>
+        <li>Create legal information page with business details</li>
+      </ul>
+    </details>
+    <details open>
+      <summary>For Semantic Alignment <span style="color: #ed8936; font-weight: 600;">(52)</span></summary>
+      <ul>
+        <li>Add FAQ section to the page to answer common questions</li>
+        <li>Simplify layout and cut duplicate content</li>
+        <li>Use bullet lists for nutrition facts</li>
+        <li>Add plain-language nutrition explainers for lay readers</li>
+      </ul>
+    </details>
+    <details>
+      <summary>For Authoritativeness <span style="color: #48bb78; font-weight: 600;">(77)</span></summary>
+      <ul>
+        <li>Improve customer trust and satisfaction to influence review scores</li>
+        <li>Publicise awards and achievements more widely</li>
+        <li>Diversify and strengthen citation sources</li>
+      </ul>
+    </details>
+
+    <h2>Granular EEATS Analysis</h2>
+    <div class="table-container">
+      <table class="analysis-table" id="analysis-table">
+        <thead>
+          <tr>
+            <th>Factor</th>
+            <th>Score</th>
+            <th>Weight</th>
+            <th>Problems</th>
+            <th>Recommendation</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          <!-- Table rows will be dynamically generated from JSON -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="pie-tooltip" class="pie-tooltip" style="display:none; position:absolute;"></div>
+
+  <!-- Agent Info Popup -->
+  <div id="agent-popup-overlay" class="popup-overlay"></div>
+  <div id="agent-popup-content" class="popup-content" style="display: none;">
+    <div class="popup-header">
+      <h3 id="popup-title" class="popup-title"></h3>
+      <p id="popup-subtitle" class="popup-subtitle"></p>
+      <div class="popup-scores">
+        <span id="popup-category" class="popup-category-badge"></span>
+        <span id="popup-score" class="popup-score-badge"></span>
+        <span id="popup-weight" class="popup-weight"></span>
+      </div>
+    </div>
+    <div class="popup-body">
+      <div class="popup-section">
+        <h4>Description</h4>
+        <p id="popup-description"></p>
+      </div>
+      <div class="popup-section">
+        <h4>Analysis</h4>
+        <p id="popup-analysis"></p>
+      </div>
+      <div class="popup-section">
+        <h4>Key Functions</h4>
+        <ul id="popup-functions"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Set the report generation date and time
+    document.addEventListener('DOMContentLoaded', function() {
+      const now = new Date();
+      const options = { 
+        year: 'numeric', 
+        month: 'long', 
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        timeZoneName: 'short'
+      };
+      document.getElementById('report-date').textContent = now.toLocaleDateString('en-US', options);
+
+      // Load and render table data from JSON
+      loadTableData();
+
+      // --- PIE CHART LOGIC ---
+      const factors = [
+        { name: 'Experience', score: 64, color: '#facc15' },
+        { name: 'Expertise', score: 51, color: '#ed8936' },
+        { name: 'Authoritativeness', score: 77, color: '#48bb78' },
+        { name: 'Trust', score: 67, color: '#facc15' },
+        { name: 'Semantics', score: 52, color: '#ed8936' }
+      ];
+      const weights = [0.16, 0.13, 0.16, 0.27, 0.29];
+      const total = 100;
+      const pie = document.getElementById('pie-segments');
+      const tooltip = document.getElementById('pie-tooltip');
+      let startAngle = 0;
+      factors.forEach((factor, i) => {
+        const angle = weights[i] * 360;
+        const endAngle = startAngle + angle;
+        const largeArc = angle > 180 ? 1 : 0;
+        const r = 70, cx = 80, cy = 80;
+        const start = polarToCartesian(cx, cy, r, startAngle);
+        const end = polarToCartesian(cx, cy, r, endAngle);
+        const d = [
+          `M ${cx} ${cy}`,
+          `L ${start.x} ${start.y}`,
+          `A ${r} ${r} 0 ${largeArc} 1 ${end.x} ${end.y}`,
+          'Z'
+        ].join(' ');
+        const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        path.setAttribute('d', d);
+        path.setAttribute('fill', factor.color);
+        path.setAttribute('fill-opacity', '0.85');
+        path.setAttribute('data-factor', factor.name);
+        path.setAttribute('data-score', factor.score);
+        path.setAttribute('data-color', factor.color);
+        path.style.cursor = 'pointer';
+        path.addEventListener('mouseenter', function(e) {
+          document.getElementById('pie-center-score').textContent = factor.score;
+          document.getElementById('pie-center-score').setAttribute('fill', factor.color);
+          document.getElementById('pie-center-label').textContent = factor.name;
+          // Tooltip
+          tooltip.innerHTML = `<strong>${factor.name}</strong><br>Score: ${factor.score}<br>Weight: ${(weights[i]*100).toFixed(0)}%`;
+          tooltip.style.display = 'block';
+        });
+        path.addEventListener('mousemove', function(e) {
+          tooltip.style.position = 'fixed';
+          tooltip.style.left = (e.clientX + 16) + 'px';
+          tooltip.style.top = (e.clientY - 10) + 'px';
+        });
+        path.addEventListener('mouseleave', function() {
+          document.getElementById('pie-center-score').textContent = '62';
+          document.getElementById('pie-center-score').setAttribute('fill', '#ed8936');
+          document.getElementById('pie-center-label').textContent = 'Combined';
+          tooltip.style.display = 'none';
+        });
+        pie.appendChild(path);
+        startAngle += angle;
+      });
+      function polarToCartesian(cx, cy, r, angle) {
+        const rad = (angle-90) * Math.PI / 180.0;
+        return {
+          x: cx + (r * Math.cos(rad)),
+          y: cy + (r * Math.sin(rad))
+        };
+      }
+
+      // Color individual factor cards based on score
+      document.querySelectorAll('.score-card').forEach((card, i) => {
+        const score = factors[i]?.score;
+        if (score !== undefined) {
+          const ring = card.querySelector('.score-ring');
+          ring.classList.remove('green', 'yellow', 'red');
+          if (score >= 75) ring.classList.add('green');
+          else if (score >= 60) ring.classList.add('yellow');
+          else ring.classList.add('red');
+        }
+      });
+
+      // Add event listener for popup overlay close functionality
+      const overlay = document.getElementById('agent-popup-overlay');
+      
+      if (overlay) {
+        overlay.addEventListener('click', hideAgentInfo);
+      }
+    });
+
+    // Agent Info Popup Functions
+    function showAgentInfo(agentName, category, description, functions, score, weight, analysis) {
+      // Populate popup content
+      document.getElementById('popup-title').textContent = agentName;
+      document.getElementById('popup-subtitle').textContent = `${category} Agent`;
+      document.getElementById('popup-description').textContent = description;
+      
+      // Populate score and weight
+      const scoreElement = document.getElementById('popup-score');
+      const weightElement = document.getElementById('popup-weight');
+      const categoryElement = document.getElementById('popup-category');
+      
+      scoreElement.textContent = score;
+      scoreElement.className = `popup-score-badge ${getScoreClass(score, weight)}`;
+      weightElement.textContent = `Weight: ${weight}`;
+      categoryElement.textContent = category;
+      
+      // Populate analysis
+      document.getElementById('popup-analysis').textContent = analysis;
+      
+      // Populate functions list
+      const functionsList = document.getElementById('popup-functions');
+      functionsList.innerHTML = '';
+      functions.forEach(function(func) {
+        const li = document.createElement('li');
+        li.textContent = func;
+        functionsList.appendChild(li);
+      });
+      
+      // Show popup
+      const overlay = document.getElementById('agent-popup-overlay');
+      const content = document.getElementById('agent-popup-content');
+      
+      overlay.style.display = 'block';
+      content.style.display = 'block';
+      
+      // Ensure proper positioning
+      content.style.position = 'fixed';
+      content.style.top = '50%';
+      content.style.left = '50%';
+      content.style.transform = 'translate(-50%, -50%)';
+    }
+
+    function getScoreClass(score, weight) {
+      // If weight is 0, return grey regardless of score
+      if (weight === '0%' || weight === 0) return 'grey';
+      
+      if (score >= 8) return 'green';
+      else if (score >= 5) return 'yellow';
+      else return 'red';
+    }
+
+    function hideAgentInfo() {
+      const overlay = document.getElementById('agent-popup-overlay');
+      const content = document.getElementById('agent-popup-content');
+      
+      overlay.style.display = 'none';
+      content.style.display = 'none';
+    }
+
+    // Load and render table data from JSON
+    async function loadTableData() {
+      try {
+        const response = await fetch('table-data.json');
+        const data = await response.json();
+        renderTable(data.tableData);
+      } catch (error) {
+        console.error('Error loading table data:', error);
+        // Fallback: render with hardcoded data if JSON fails to load
+        renderTable([]);
+      }
+    }
+
+    // Render table from JSON data
+    function renderTable(tableData) {
+      const tableBody = document.getElementById('table-body');
+      tableBody.innerHTML = '';
+
+      tableData.forEach(row => {
+        const tr = document.createElement('tr');
+        
+        // Create agent name cell with info icon
+        const agentCell = document.createElement('td');
+        agentCell.innerHTML = `${row.agentName} <span class="info-icon">i</span>`;
+        
+        // Add click event listener to the info icon
+        const infoIcon = agentCell.querySelector('.info-icon');
+        infoIcon.addEventListener('click', function() {
+          showAgentInfo(row.agentName, row.category, row.description, row.functions, row.score, row.weight, row.analysis);
+        });
+        
+        // Create score cell
+        const scoreCell = document.createElement('td');
+        const scoreClass = getScoreClass(row.score, row.weight);
+        scoreCell.innerHTML = `<span class="score-badge ${scoreClass}">${row.score}</span>`;
+        
+        // Create other cells
+        const weightCell = document.createElement('td');
+        weightCell.textContent = row.weight;
+        
+        const problemsCell = document.createElement('td');
+        if (row.problems && row.problems.trim() !== '') {
+          const problemsList = row.problems.split('|').map(item => item.trim()).filter(item => item);
+          if (problemsList.length > 0) {
+            const ul = document.createElement('ul');
+            ul.className = 'cell-bullet-list';
+            problemsList.forEach(problem => {
+              const li = document.createElement('li');
+              li.textContent = problem;
+              ul.appendChild(li);
+            });
+            problemsCell.appendChild(ul);
+          } else {
+            problemsCell.textContent = '';
+          }
+        } else {
+          problemsCell.textContent = '';
+        }
+        
+        const recommendationCell = document.createElement('td');
+        if (row.recommendation && row.recommendation.trim() !== '') {
+          const recommendationList = row.recommendation.split('|').map(item => item.trim()).filter(item => item);
+          if (recommendationList.length > 0) {
+            const ul = document.createElement('ul');
+            ul.className = 'cell-bullet-list';
+            recommendationList.forEach(recommendation => {
+              const li = document.createElement('li');
+              li.textContent = recommendation;
+              ul.appendChild(li);
+            });
+            recommendationCell.appendChild(ul);
+          } else {
+            recommendationCell.textContent = '';
+          }
+        } else {
+          recommendationCell.textContent = '';
+        }
+        
+        // Append all cells to the row
+        tr.appendChild(agentCell);
+        tr.appendChild(scoreCell);
+        tr.appendChild(weightCell);
+        tr.appendChild(problemsCell);
+        tr.appendChild(recommendationCell);
+        
+        // Append row to table body
+        tableBody.appendChild(tr);
+      });
+    }
+
+    // Close popup on escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        hideAgentInfo();
+      }
+    });
+  </script>
+
+  <footer class="report-footer">
+    <div class="footer-main">Adobe Experience Manager</div>
+    <div class="footer-meta">
+      Copyright © 2025 Adobe. All rights reserved / 京ICP备10217899号-7
+      <span class="footer-links">Privacy / Terms of Use / Do not sell my personal information</span>
+    </div>
+  </footer>
+</body>
+</html>
