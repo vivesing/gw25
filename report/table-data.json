@@ -191,12 +191,12 @@
         "Assesses statistical methodology",
         "Measures content statistical rigor"
       ],
-      "score": 6,
+      "score": 4,
       "scoreClass": "yellow",
       "weight": "8%",
-      "analysis": "Provides quantitative stats (nutrition, customer reach) but without external sources. | No links for certifications/data. | Pricing lacks market context or comparisons.",
-      "problems": "No external citations for stats. | Missing links to certifyInformed Choice. | No contextual pricing analysis.",
-      "recommendation": "Link to studies, data sources, certifications. | Include market_price comparisons. | Disclose methodology for customer stats."
+      "analysis": "Provides relevant quantitative stats (nutrition, customer reach) and and accolades but without external sources. | No links for certifications/data.",
+      "problems": "No external citations or third party certification for stats. | Absence of independent lab testing information to boost credibility."",
+      "recommendation": "Citations or third-party certifications for the nutritional data and statistics. |  Incorporate third-party testing outcomes"
     },
     {
       "id": "organisation_schema_analysis_agent",
