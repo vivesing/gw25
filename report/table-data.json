@@ -65,12 +65,12 @@
         "Assesses content trustworthiness",
         "Measures content credibility signals"
       ],
-      "score": 6,
-      "scoreClass": "yellow",
+      "score": 9,
+      "scoreClass": "green",
       "weight": "5%",
       "analysis": "Consistent messaging on high protein & certifications across page. | Redundant discount/benefit text clutters layout.",
-      "problems": "Repetition & redundancy in copy. | Encoding/formatting errors. | Scattered details reduce clarity.",
-      "recommendation": "Remove redundant sections to declutter. | Fix encoding issues. | Balance promos with concise product focus."
+      "problems": "The product description and benefits sections sometimes use dense, jargon-heavy phrasing (e.g., “whey protein concentrate with an impressive 82% protein content”), which may be less accessible to casual or first-time buyers.",
+      "recommendation": "Simplify and break up long, technical sentences into shorter, more conversational lines (e.g., “High-quality whey concentrate with 82% protein. Ideal for supporting muscle growth.”) to improve readability for all audiences."
     },
     {
       "id": "content_cta_analysis_agent",
@@ -195,7 +195,7 @@
       "scoreClass": "yellow",
       "weight": "8%",
       "analysis": "Provides relevant quantitative stats (nutrition, customer reach) and and accolades but without external sources. | No links for certifications/data.",
-      "problems": "No external citations or third party certification for stats. | Absence of independent lab testing information to boost credibility."",
+      "problems": "No external citations or third party certification for stats. | Absence of independent lab testing information to boost credibility.",
       "recommendation": "Citations or third-party certifications for the nutritional data and statistics. |  Incorporate third-party testing outcomes"
     },
     {
@@ -299,12 +299,12 @@
         "Assesses company trustworthiness",
         "Measures business credibility signals"
       ],
-      "score": 5,
-      "scoreClass": "yellow",
+      "score": 8,
+      "scoreClass": "green",
       "weight": "1%",
       "analysis": "Product page omits company legal & registration details. | Parent entity (THG Nutrition) not referenced on page. | Greater transparency would increase trust.",
-      "problems": "No company registration info. | Certifications not paired with business info.",
-      "recommendation": "Add company name, number, jurisdiction in the footer. | Create legal_information page. | Show certifications alongside legal details."
+      "problems": "The company registration details are not displayed on the product page itself, requiring users to navigate to the Terms and Conditions page to find them. | Visibility of legal entity information is low for casual shoppers who may never check the Terms page.",
+      "recommendation": "Add a clear “Company Information” section or footer note on product pages with the legal entity name, registration number, and address. | Include a brief company registration summary on the checkout page or in the website footer for easier, more visible access."
     },
     {
       "id": "trust_contact_info_analysis_agent",
@@ -317,12 +317,12 @@
         "Assesses customer service availability",
         "Measures business openness signals"
       ],
-      "score": 9,
-      "scoreClass": "green",
+      "score": 7.5,
+      "scoreClass": "yellow",
       "weight": "5%",
       "analysis": "Contact page lists toll_free phone, email, physical address, message centre. | Info current & comprehensive. | Main product page lacks quick access to contact link.",
-      "problems": "",
-      "recommendation": ""
+      "problems": "No phone number provided anywhere on the website, which limits customer support options and can reduce trust. | Physical address is not shown directly on the Contact Us page, making it slightly harder for users to verify the business location.",
+      "recommendation": "Add a direct customer service phone number on the Contact Us page to increase trust and offer more support options. | Display the physical business address directly on the Contact Us page (not just in FAQs) to improve transparency and make it easier for customers to verify the company."
     },
     {
       "id": "trust_ecommerce_policy_analysis_agent",
@@ -335,12 +335,12 @@
         "Assesses ecommerce credibility",
         "Measures online security indicators"
       ],
-      "score": 10,
-      "scoreClass": "green",
+      "score": 3,
+      "scoreClass": "red",
       "weight": "6%",
       "analysis": "Returns policy (28_day window, photo proof, refund/replace terms) and delivery info (36 days, free shipping>_5000, tracking) clear & accessible. | Links reside in customer_service section; could be more visible on product pages.",
-      "problems": "",
-      "recommendation": ""
+      "problems": "No Returns Policy page found | Incomplete Delivery Info (no clear shipping details) | Returns Policy exists but only in Help/Support, not on product page",
+      "recommendation": "Add a clear Returns Policy page with refund terms, timeframes, and steps |  Fill out Delivery Info with shipping costs, times, carriers, and tracking. | Make both pages easy to find in the footer and FAQs with clear headings like “Delivery & Shipping” and “Returns & Refunds.”"
     },
     {
       "id": "trust_last_updated_analysis_agent",
@@ -353,12 +353,12 @@
         "Assesses content maintenance practices",
         "Measures information trust signals"
       ],
-      "score": 3,
-      "scoreClass": "red",
+      "score": 4,
+      "scoreClass": "yellow",
       "weight": "7%",
       "analysis": "last updated is not present in the html meta tag | last updated is not present in the json-ld schema | last updated infered from latest review added by customers",
-      "problems": "last updated is not visible on the page | last updated is not present in response headers | last updated is not present in the html meta tag | last updated is not present in the json-ld schema",
-      "recommendation": "Last updated should be visible on the page | Last updated should be present in response headers | Last updated should be present in the html meta tag | Last updated should be present in the json-ld schema"
+      "problems": "No visible “last updated” or “published” date on the product page—users can't see when content was last reviewed or changed. Only date found is the HTTP last-modified header (e.g., “Fri, 28 Jun 2024”), which is hidden from users and doesn’t clarify what was updated. Lack of clear, user-facing date reduces trust in content freshness, especially important for product details like ingredients or nutrition.",
+      "recommendation": "Add a clearly visible “Last Updated” date on the product page to show when the description and nutritional info were last reviewed. | Include specific details about what was updated, e.g., “Ingredients updated June 2024,” to improve transparency and user trust."
     },
     {
       "id": "trust_policy_pages_analysis_agent",
@@ -375,8 +375,8 @@
       "scoreClass": "green",
       "weight": "2.5%",
       "analysis": "Privacy Policy & Terms/Conditions clear and linked in footer. | No dedicated Cookie Policy. | Lacks copyright notice & formal complaints procedure.",
-      "problems": "Missing Cookie Policy. | No copyright notice. | No formal complaints process.",
-      "recommendation": "Publish Cookie Policy for transparency. | Add copyright statement. | Provide complaints procedure for issue resolution."
+      "problems": "No visible or formal complaints handling procedure. | Cookie notice is present but less discoverable. | Complaints procedure is minimal (only mentions contacting customer service).",
+      "recommendation": "Add a clear, dedicated Complaints Handling Procedure page outlining steps, timescales, and escalation options. | Make the Cookie Policy more discoverable by providing a standalone, clearly labeled link in the footer or header. | Expand the complaints information beyond a simple “contact us” note to include a structured procedure users can follow."
     },
     {
       "id": "uniquieness_analysis_agent",
